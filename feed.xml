@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-04-26T07:04:09+00:00</updated><id>/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The Frontier Firm Bet</title><link href="/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/" rel="alternate" type="text/html" title="The Frontier Firm Bet" /><published>2026-04-25T13:33:30+00:00</published><updated>2026-04-25T13:33:30+00:00</updated><id>/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm</id><content type="html" xml:base="/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/"><![CDATA[<h3 id="a-decision-makers-case-for-microsoft-ai-fabric-foundry-and-m365--better-together-with-databricks-snowflake-via-onelake-delta-and-iceberg">A Decision-Maker’s Case for Microsoft AI, Fabric, Foundry, and M365 — Better Together with Databricks, Snowflake via OneLake, Delta and Iceberg</h3>
+
+<p><em>For architects designing the estate. For executives funding it. For both, the same conclusion.</em></p>
+
+<hr />
+
+<p>The slow adopter problem is no longer subtle. Microsoft’s own Frontier Firm research shows organizations that move decisively on AI, agents, and a unified data estate are reporting outcomes roughly <strong>four times</strong> higher than slow adopters on brand differentiation, top-line growth, and operating leverage simultaneously. That gap is not a forecast. It is already showing up on quarterly earnings calls.</p>
+
+<p>The decision in front of you is not whether to invest in AI and modern data infrastructure. The decision is whether you build a coherent estate that compounds — or another portfolio of disconnected pilots that quietly cancels itself in 2027 alongside the <strong>40% of agentic AI initiatives Gartner expects to be killed</strong> by then for unclear ROI, fragmented governance, and runaway operating costs.</p>
+
+<p>This post lays out the bet that <em>does</em> compound. It’s the bet your best customers, competitors, and <strong>Prosumers</strong> are already making. And it’s a bolder one than most decks you’ve seen.</p>
+
+<h2 id="what-a-prosumer-actually-is">What a <strong>Prosumer</strong> Actually Is</h2>
+
+<p>Alvin Toffler coined the word in <em>The Third Wave</em> in 1980. The Industrial Revolution split production from consumption. The information age, he argued, would merge them again. He was right — he was just forty years early.</p>
+
+<p>A <strong>Prosumer</strong> is anyone who <strong>co-designs, co-creates, co-curates, co-composes, and codes-with</strong> the systems they use. Not a passive recipient of dashboards and pre-baked apps. A participant. Someone with deep domain knowledge, technical curiosity, and a relentless bias toward outcomes.</p>
+
+<h2 id="the-thesis-in-one-sentence">The Thesis in One Sentence</h2>
+
+<p><strong>Win the next decade by building one governed AI-and-data estate — Microsoft AI, Fabric, Foundry, and M365 better together with Databricks and Snowflake on OneLake using open table formats — and design the estate so **Prosumers</strong> in every business domain can compose on top of it without breaking it.**</p>
+
+<p>That sentence has two halves. Most enterprises invest in the first and ignore the second. The ones that win the Frontier Firm gap invest in both, on purpose, simultaneously.</p>
+
+<h2 id="why-better-together-is-the-architecture-not-a-compromise">Why “Better Together” Is the Architecture, Not a Compromise</h2>
+
+<p>The single-vendor data platform debate is over. The customers who quietly out-execute their peers are running multi-platform estates by design — and the architecture is finally good enough that this works.</p>
+
+<p>The reason is open table formats. <strong>Apache Iceberg and Delta Lake</strong> turned what used to be a copy-and-ETL nightmare into an interoperability layer. When a Finance domain publishes a Gold table in OneLake as Delta or Iceberg, the ML team in Databricks reads it without copying. Snowflake operates on the same OneLake-backed Iceberg tables through Microsoft’s joint announcement. Microsoft Fabric, Azure Databricks, and Snowflake on Azure are no longer competing for “the data estate” — they are differentiated personas inside one estate.</p>
+
+<p>That detente has a clean architectural shape:</p>
+
+<ul>
+  <li><strong>Microsoft Fabric</strong> owns the <strong>Prosumer</strong>, the analyst, and the M365-resident business user. Power Query lineage, Power BI semantic models, Direct Lake performance, Copilot natively wired in. This is your front of the house.</li>
+  <li><strong>Databricks</strong> owns the engineer, the data scientist, the ML and GenAI builder. Mosaic AI, MLflow, Unity Catalog, deep Spark and Python control. This is your factory.</li>
+  <li><strong>Snowflake</strong> owns the analytics engineer, the warehouse-grade SQL workload, and the cross-org data sharing story. This is your storefront.</li>
+  <li><strong>OneLake plus Delta and Iceberg</strong> is the connective tissue — one storage substrate, many engines, no triplicate data.</li>
+</ul>
+
+<p><img src="assets/images/postimages/prosumer/MicrosoftAIstack.png" alt="The labelled stack: M365 Copilot (AI) · Fabric (Analytics) · Copilot Studio (Agents) · Foundry (Apps) sitting on top of OneLake — with Snowflake on Azure, Azure Databricks, Delta, Iceberg, Dataverse, and S3/GCP/ADLS as peers. M365 SharePoint carries the 80% unstructured estate (Doc, Img, Txt, Video, MD, Audio, PDF). GitHub Copilot CLI, coding agents, and VS Code with GitHub Copilot are the developer surface." /></p>
+
+<p>This is the architecture you’re funding. OneLake. Many engines. Open formats as the contract.</p>
+
+<h2 id="twenty-percent-structured-eighty-percent-unstructured-both-are-yours-now">Twenty Percent Structured. Eighty Percent Unstructured. Both Are Yours Now.</h2>
+
+<p>Most enterprise data architecture spent the last twenty years optimizing the 20% of value that lives in structured systems — ERPs, CRMs, warehouses. The 80% trapped in documents, email, audio, video, images, transcripts, PDFs, and SharePoint sites was someone else’s problem.</p>
+
+<p>That partition is no longer survivable. Agentic AI fails on incomplete context. The boring institutional knowledge that lives in unstructured stores is exactly the fuel that makes agents accurate, grounded, and safe to deploy at scale.</p>
+
+<p>The architecture has converged on a simple answer: <strong>lift unstructured data into the same governed estate as structured data</strong>, and surface it through the same intelligence layer.</p>
+
+<p>That’s what M365 SharePoint, M365 Copilot, and Foundry deliver alongside Fabric. WorkIQ — the intelligence layer Microsoft 365 Copilot uses to understand your work, your files, your meetings, your style — is the unstructured-data equivalent of what FabricIQ does for structured data with semantic models, joins, and Direct Lake performance. FoundryIQ binds them through AI search and agentic orchestration. <strong>Three IQs, one estate, zero context lost between them.</strong></p>
+
+<p><img src="assets/images/postimages/prosumer/MyPoster.jpeg" alt="80% of enterprise value lives in the unstructured estate — docs, images, video, audio, email — surfaced through M365 SharePoint and Foundry. The 20% structured estate flows through OneLake, Delta and Iceberg, into Fabric, Databricks, and Snowflake. M365 Copilot, GitHub Copilot CLI, and VS Code are the composition surface across both." /></p>
+
+<h2 id="the-prosumer-multiplier--and-why-its-your-most-underpriced-asset">The <strong>Prosumer</strong> Multiplier — and Why It’s Your Most Underpriced Asset</h2>
+
+<p>Here is the bet most boards are still under-funding: <strong>the **Prosumer</strong> is the highest-leverage role in the modern enterprise.**</p>
+
+<p>A <strong>Prosumer</strong> is the FP&amp;A analyst who has been quietly building working forecasts in personal Claude or Copilot accounts. The marketing manager piping segments through n8n. The engineer who automated half their team’s release ops with a Zapier flow. The mechanic at a national railroad who wrote a mobile inspection app powered by AI photo analysis — and whose work the railroad’s data scientists are now refining and scaling. (That’s a real Forrester case.)</p>
+
+<p>For decades these people were filed under “shadow IT” and treated as a compliance problem. That framing is now actively destroying enterprise value. <strong>When approved tools are provided, unauthorized AI use drops 89%.</strong> The demand was never illegitimate. The platform was just missing.</p>
+
+<p>The Frontier Firm move is to <strong>legitimize the Prosumer with a governed tier</strong> rather than fight them. Microsoft Fabric, Copilot Studio, Power Platform, Agent 365, and the GitHub Copilot / VS Code / Copilot CLI surface together comprise the most complete <strong>Prosumer</strong> stack any vendor has shipped. When you wire that <strong>Prosumer</strong> surface into a Databricks- and Snowflake-grade engine room over OneLake, you get the only architecture that satisfies both <strong>Prosumer</strong> speed and engineer rigor at the same time.</p>
+
+<p>The carrot for the <strong>Prosumer</strong>: real tools, real compute, real reach into the estate. The standard for the enterprise: open formats, federated governance, audit trails, agent identity, a contribution path back to the catalog. The exchange is the architecture.</p>
+
+<h2 id="conways-law-will-decide-this-for-you--whether-you-like-it-or-not">Conway’s Law Will Decide This for You — Whether You Like It or Not</h2>
+
+<p>Mel Conway noticed in 1968 that systems mirror the communication structures of the organizations that build them. Centralized teams build monoliths. Distributed teams build distributed systems. A central data team cannot — physically cannot — carry the domain context of Finance, Marketing, R&amp;D, Operations, and Risk through one pipe and keep up with a market that’s compounding on AI.</p>
+
+<p>This is not a culture problem. It’s structural physics. The Frontier Firms in your industry are already structured for it.</p>
+
+<p>The architectural answer is <strong>Data Mesh</strong>: domain ownership, data as a product, self-serve infrastructure, federated governance. Critically, Data Mesh is the <em>only</em> design that explains why a Fabric + Databricks + Snowflake estate is correct rather than confusing — different domains have different personas, different workloads, and different platform fit. The mesh ratifies that. A monolith fights it.</p>
+
+<h2 id="where-the-architecture-has-to-be-sharp--and-where-most-decks-wave-their-hands">Where the Architecture Has to Be Sharp — and Where Most Decks Wave Their Hands</h2>
+
+<p>If you are an architect, this is where the decisions get real. If you are funding the architecture, this is the section to read carefully — these are the four places budget gets wasted when no one owns them.</p>
+
+<p><strong>1. The governance plane.</strong> Microsoft Purview and Databricks Unity Catalog do not yet auto-synchronize. A neutral catalog above both — Alation, Collibra, or Purview-as-the-spine with Unity federation — is non-optional. Without it, your mesh becomes a federated set of spreadmarts with credentials. Pick the spine on day one, not year three.</p>
+
+<p><strong>2. The semantic layer as a composable asset, not a finished product.</strong> The most expensive architectural mistake of the last decade was treating IT-built Gold tables as the <em>end</em> of the data supply chain. They are the <em>beginning</em> of the <strong>Prosumer’s</strong> composition. Microsoft Fabric’s decoupled semantic models and composite modeling are explicitly designed for this. Gartner is now warning that <strong>60% of agentic analytics projects relying solely on raw MCP tooling will fail by 2028 due to absence of a consistent semantic layer</strong>. Fund the semantic layer like infrastructure, not like a BI deliverable.</p>
+
+<p><strong>3. The orchestration and agent registry.</strong> The shift from copilots to agents is the shift from suggestion to action. That requires an agent identity model, runtime guardrails, and a registry of who built which agent and what it’s allowed to do. Microsoft Agent 365, Copilot Studio’s governance plane, and Foundry’s orchestration are converging on this. Your architecture either has an agent registry from day one or it has a security incident in year two.</p>
+
+<p><strong>4. The hybrid posture.</strong> Optimism without rigor produces hallucinations at scale. Rigor without optimism produces three-year programs that ship nothing. The honest middle is hybrid — probabilistic AI grounded by deterministic semantic models, governed pipelines, and systems of record. This is the realistic, pragmatic, hybrid stance that actually delivers ROI.</p>
+
+<h2 id="what-the-numbers-actually-look-like">What the Numbers Actually Look Like</h2>
+
+<p>The economic argument has gotten cleaner over the last 18 months.</p>
+
+<ul>
+  <li><strong>Frontier Firms are ~4× ahead</strong> of slow adopters on brand differentiation, top-line growth, and operating leverage (Microsoft research).</li>
+  <li><strong>89% drop in unauthorized AI use</strong> when <strong>Prosumers</strong> are given sanctioned tools (Vectra AI).</li>
+  <li><strong>Mainframe modernization cost dropped from $9.1M (2024) to $7.2M (2025)</strong> with ROI more than doubling — driven by AI-accelerated extension and 4 A’s modernization, not rip-and-replace (Network World, Kyndryl).</li>
+  <li><strong>80%+ of AI projects still fail</strong> — twice the rate of traditional tech programs — when data foundation, governance, and <strong>Prosumer</strong> enablement are reversed in sequence (Informatica).</li>
+</ul>
+
+<p>The pattern is unambiguous. Sequence matters. Investing in <strong>Prosumer-grade</strong> composition surfaces <em>without</em> the unified data estate beneath produces confident hallucinations. Investing in the data estate <em>without</em> the <strong>Prosumer</strong> composition surface produces beautiful infrastructure no one uses. The Frontier Firms invest in both, in the correct order, and on a single coherent architecture.</p>
+
+<h2 id="what-to-fund-on-monday">What to Fund on Monday</h2>
+
+<p>For the architect:</p>
+
+<ul>
+  <li>One governed estate with <strong>OneLake as the substrate</strong>, Delta and Iceberg as the contract, Fabric/Databricks/Snowflake as personas, M365 SharePoint and Foundry for the unstructured 80%.</li>
+  <li>A <strong>neutral governance spine</strong> — Purview-led with Unity Catalog federation, or a third-party catalog above both. Don’t defer this.</li>
+  <li>A <strong>composable semantic layer</strong> in Fabric that <strong>Prosumers</strong> can extend without breaking IT contracts. Direct Lake. Composite models. Decoupled semantic items.</li>
+  <li>An <strong>agent registry</strong> under Agent 365 and Copilot Studio governance from day one.</li>
+  <li>A <strong>Prosumer tier</strong> with Copilot Studio, Power Platform, GitHub Copilot CLI, and VS Code wired into the same estate the engineers use — not a separate sandbox that becomes a graveyard.</li>
+</ul>
+
+<p>For the executive:</p>
+
+<ul>
+  <li>Fund the <strong>architecture as a single bet</strong>, not as five disconnected line items. The compounding only works when the layers connect.</li>
+  <li>Fund the <strong>Prosumer enablement</strong> as deliberately as you fund the platform. This is where the 4× performance gap actually materializes.</li>
+  <li>Fund <strong>governance and observability</strong> as infrastructure, not as a compliance afterthought. Every dollar saved here is paid back at 10× when the program scales.</li>
+  <li>Fund <strong>change management.</strong> Conway’s Law guarantees that the org you have today is the architecture you’ll get tomorrow. Reorganize for distribution and <strong>Prosumer</strong> participation, not just for committees.</li>
+</ul>
+
+<h2 id="the-bold-bet-said-plainly">The Bold Bet, Said Plainly</h2>
+
+<p>The next decade will divide enterprises into two camps. One camp will keep treating AI as a feature, the data estate as a centralized concern, the <strong>Prosumer</strong> as a compliance problem, and Fabric vs. Databricks vs. Snowflake as a procurement decision. They will spend a great deal of money building infrastructure that doesn’t compound.</p>
+
+<p>The other camp will fund a <strong>single governed estate</strong> — Microsoft AI, Fabric, Foundry, M365 SharePoint, M365 Copilot, GitHub Copilot CLI, VS Code, better together with Databricks and Snowflake on OneLake using Delta and Iceberg — designed deliberately so that <strong>Prosumers</strong> in every domain can compose, contribute, and ship on top of it. They will become Frontier Firms. The 4× gap will become a 10× gap, and then a category-defining one.</p>
+
+<p>The architecture is ready. The economics are clean. The <strong>Prosumers</strong> are already building. The only remaining question is whether the funding decision matches the ambition of the architecture.</p>
+
+<p>Make the bold bet. The whole stack is finally yours to use.</p>
+
+<hr />
+
+<p><em>Companion piece for <strong>Prosumers</strong> and implementers: see <a href="./2026-04-25-prosumerfrontierfirm.md">2026-04-25-prosumerfrontierfirm.md</a>. Same thesis, different lens.</em></p>]]></content><author><name>CommonAcumen</name></author><category term="ai and agents" /><category term="ai coding agents" /><category term="ai" /><category term="aicodingagents" /><category term="agents" /><category term="analytics" /><category term="apps" /><category term="architecture" /><summary type="html"><![CDATA[A Decision-Maker’s Case for Microsoft AI, Fabric, Foundry, and M365 — Better Together with Databricks, Snowflake via OneLake, Delta and Iceberg]]></summary></entry><entry><title type="html">The Prosumer Is the Frontier Firm</title><link href="/ai%20and%20agents/ai%20coding%20agents/prosumerfrontierfirm/" rel="alternate" type="text/html" title="The Prosumer Is the Frontier Firm" /><published>2026-04-25T13:33:30+00:00</published><updated>2026-04-25T13:33:30+00:00</updated><id>/ai%20and%20agents/ai%20coding%20agents/prosumerfrontierfirm</id><content type="html" xml:base="/ai%20and%20agents/ai%20coding%20agents/prosumerfrontierfirm/"><![CDATA[<h3 id="why-microsoft-ai-fabric-foundry-m365-and-github-copilot-cli--better-together-with-databricks-snowflake-via-onelake-delta-and-iceberg--finally-give-shadow-it-a-home-worth-living-in">Why Microsoft AI, Fabric, Foundry, M365, and GitHub Copilot CLI — Better Together with Databricks, Snowflake via OneLake, Delta and Iceberg — Finally Give Shadow IT a Home Worth Living In</h3>
+
+<hr />
+
+<p>If you’ve ever waited six months for a report you could have built in an afternoon, you already know what this post is about. You opened Excel anyway. You wired up an Access database, a Notion page, a personal Claude account, an n8n flow, a Zapier hook. You shipped. Then IT found you and called it shadow IT.</p>
+
+<p>You weren’t a problem. You were a signal. And the signal is finally being heard.</p>
+
+<p>The wave we are living through right now — AI, agents, analytics, and new apps stitched across structured and unstructured data — is the biggest legitimization of the <strong>Prosumer</strong> in fifty years of enterprise computing. Not because the tooling is finally cool enough (it is). Because the architecture has finally caught up with the way work actually happens.</p>
+
+<p>This is a post for the builder who never stopped building.</p>
+
+<h2 id="what-a-prosumer-actually-is">What a <strong>Prosumer</strong> Actually Is</h2>
+
+<p>Alvin Toffler coined the word in <em>The Third Wave</em> in 1980. The Industrial Revolution split production from consumption. The information age, he argued, would merge them again. He was right — he was just forty years early.</p>
+
+<p>A <strong>Prosumer</strong> is anyone who <strong>co-designs, co-creates, co-curates, co-composes, and codes-with</strong> the systems they use. Not a passive recipient of dashboards and pre-baked apps. A participant. Someone with deep domain knowledge, technical curiosity, and a relentless bias toward outcomes.</p>
+
+<p>Every wave of enterprise tech has produced them. Lotus 1-2-3 in the 80s. Access datamarts in the 90s. SaaS in the 2000s. Power BI and Tableau in the 2010s. Each time, the same five motivations: IT was too slow, the functional need was unmet, a better tool existed outside the perimeter, the <strong>Prosumer’s</strong> domain knowledge was an unfair advantage, and the deadline was real.</p>
+
+<p>The pattern resolved the same way every time too — not by banning the <strong>Prosumer</strong>, but by <strong>building a new tier of the platform that absorbed their energy into the governed estate</strong>. Excel got SharePoint and Power BI. Access got Power Platform. Shadow SaaS got SSO and CASB. Each generation took roughly a decade.</p>
+
+<p>This generation is faster, and the stakes are higher. Because this time, the <strong>Prosumer</strong> isn’t shipping a static spreadsheet. They’re using Coding Agents like GitHub Copilot CLI and Claude Code and shipping autonomous agents.  These Coding Agents are more enabling, addictive, and make the <strong>Prosumer</strong> more productive than ever.  You can’t be technically blocked.</p>
+
+<h2 id="shadow-it-was-never-the-disease-it-was-the-diagnosis">Shadow IT Was Never the Disease. It Was the Diagnosis.</h2>
+
+<p>For decades, IT departments tried to stomp out shadow IT. Data Mesh and the modern AI stack do the opposite. They give it a home.</p>
+
+<p>The deal is straightforward, and it’s a good one:</p>
+
+<p><strong>The carrot:</strong> You get the heavy-duty platform you always wanted. Microsoft Fabric for analytics and semantic models. M365 SharePoint for the 80% of your data that’s documents, email, audio, video, images. M365 Copilot as the user surface that already lives where you work. GitHub Copilot CLI and VS Code so you can code-with instead of code-around. Foundry for AI search, agents, and orchestration. OneLake underneath, with Databricks and Snowflake right there inside it — same Delta tables, same Iceberg tables, no copy, no re-engineering.</p>
+
+<p><strong>The standard:</strong> You publish to the mesh in open formats. You follow the security and governance posture. You let your work be discoverable, attributable, reusable. In exchange, your output stops being a brittle macro that breaks the day you leave and becomes a real data product with an audit trail and an SLO.</p>
+
+<p>That trade — that’s the formalization of shadow IT. That’s what turns chaos into scale.</p>
+
+<h2 id="why-better-together-is-the-only-architecture-that-survives-contact-with-reality">Why “Better Together” Is the Only Architecture That Survives Contact With Reality</h2>
+
+<p>Pick a single platform and you’ve already lost. The Finance <strong>Prosumer</strong> wants Excel-grade familiarity, Power Query lineage, and a Power BI surface that talks to M365 Copilot. The ML engineer wants Databricks notebooks, Mosaic AI, MLflow, and PySpark. The analytics engineer wants Snowflake’s zero-admin SQL warehouse and clean data sharing. The compliance team wants Purview <em>and</em> Unity Catalog, because neither of them speaks the other’s dialect yet.</p>
+
+<p>The mistake isn’t picking three platforms. The mistake is treating them as competitors. They’re not. They’re <strong>personas</strong>.</p>
+
+<p>OneLake plus open table formats is what makes the détente real. When Finance publishes a Gold table as Delta or Iceberg in OneLake, the ML team in Databricks reads it without copying. When Snowflake reads OneLake-backed Iceberg tables, the data sharing story is one estate, not three. The 80% of value that lives in unstructured M365 SharePoint content gets lifted into the same mesh by Foundry’s AI search and Fabric’s semantic models. M365 Copilot composes across all of it.</p>
+
+<p>Twenty percent structured. Eighty percent unstructured. OneLake. Many engines. That’s the picture.</p>
+
+<p><img src="assets/images/postimages/prosumer/MicrosoftAIstack.png" alt="The labelled stack: M365 Copilot (AI) · Fabric (Analytics) · Copilot Studio (Agents) · Foundry (Apps) sitting on top of OneLake — with Snowflake on Azure, Azure Databricks, Delta, Iceberg, Dataverse, and S3/GCP/ADLS as peers. M365 SharePoint carries the 80% unstructured estate (Doc, Img, Txt, Video, MD, Audio, PDF). GitHub Copilot CLI, coding agents, and VS Code with GitHub Copilot are the Prosumer's right-hand side." /></p>
+
+<p><img src="assets/images/postimages/prosumer/MyPoster.jpeg" alt="80% of enterprise value lives in the unstructured estate — docs, images, video, audio, email — surfaced through M365 SharePoint and Foundry. The 20% structured estate flows through OneLake, Delta and Iceberg, into Fabric, Databricks, and Snowflake. M365 Copilot, GitHub Copilot CLI, and VS Code are how the prosumer composes across both." /></p>
+
+<h2 id="conways-law-is-doing-the-heavy-lifting">Conway’s Law Is Doing the Heavy Lifting</h2>
+
+<p>Mel Conway noticed in 1968 that systems mirror the communication structures of the organizations that build them. Centralized teams build centralized monoliths. Distributed teams build distributed systems. You can’t outrun your own org chart with architecture diagrams.</p>
+
+<p>This is why a centralized, IT-only data warehouse always loses to a Data Mesh once the organization gets past a certain size. You cannot compress the domain knowledge of Finance, Marketing, R&amp;D, Operations, and Risk through one central pipe and expect to keep up with the business. Conway’s Law won’t let you.</p>
+
+<p>Distribution isn’t a fashion. It’s a structural requirement for speed.</p>
+
+<p>The Data Mesh principles fall straight out of Conway’s Law: <strong>domain ownership, data as a product, self-serve infrastructure, federated governance.</strong> You’re not adopting Data Mesh because it’s trendy. You’re adopting it because your competitors who already adopted it ship four times faster than you do, and Microsoft’s own Frontier Firm research says fast adopters are pulling away from slow adopters on brand differentiation, top-line growth, and operating leverage simultaneously.</p>
+
+<h2 id="the-frontier-firm-is-a-prosumer-rich-firm">The Frontier Firm Is a Prosumer rich Firm</h2>
+
+<p>The phrase “Frontier Firm” gets thrown around in a lot of decks. Strip the marketing off and what it actually means is this: an organization that treats intelligence as a utility, agents as colleagues, and <strong>Prosumers as the engine of innovation rather than a compliance problem</strong>.</p>
+
+<p>Frontier Firms don’t lock the <strong>Prosumer</strong> out. They give them:</p>
+
+<ul>
+  <li><strong>A composition layer</strong> — natural language agent assembly in Copilot Studio, low-code in Power Platform, real code in VS Code with GitHub Copilot, GitHub Copilot CLI for the terminal-bound builder, Foundry for the orchestrated agent.</li>
+  <li><strong>A unification layer</strong> — OneLake, M365 SharePoint, semantic models in Fabric, knowledge stores in Foundry, Delta and Iceberg as the open contracts that let Databricks and Snowflake play in the same mesh.</li>
+  <li><strong>An orchestration layer</strong> — agents that can chain across structured <em>and</em> unstructured data, write back to systems of record, and escalate to a human when stakes are high.</li>
+  <li><strong>A contribution path</strong> — a way for what a <strong>Prosumer</strong> composes on Tuesday to be peer-reviewed, hardened, and promoted to the catalog by Friday. The railroad mechanic’s photo-inspection app becomes a real product, not a compliance incident.</li>
+</ul>
+
+<p>The IT-built Gold table is no longer the end of the data supply chain. It’s the <strong>beginning of the Prosumer’s composition</strong>. That single inversion is what unlocks the rest.</p>
+
+<h2 id="the-realistic-bet-hybrid">The Realistic Bet: Hybrid</h2>
+
+<p>Every honest assessment of AI right now lands in the same place. Pure optimism is naive. Pure pessimism is paralysis. <strong>Realistic</strong> is the line between them. Pure idealism is a deck. <strong>Pragmatism</strong> is what ships. Pure non-determinism is a chatbot. Pure determinism is a 1990s rules engine. <strong>Hybrid</strong> — probabilistic AI grounded by deterministic semantics, governance, and systems of record — is what actually works.</p>
+
+<p>That hybrid posture is exactly what Microsoft AI plus Fabric plus Foundry plus M365 — better together with Databricks and Snowflake on OneLake, in Delta and Iceberg — actually delivers. Probabilistic agents over governed semantic layers. Vibe-working over real systems of record. Optimism with audit trails.</p>
+
+<h2 id="so-what-are-you-supposed-to-do-on-monday">So What Are You Supposed To Do On Monday</h2>
+
+<p>If you’re a <strong>Prosumer</strong> reading this, the work is concrete and it’s available right now.</p>
+
+<p><strong>Pick a real problem you’ve already been solving in shadow.</strong> A spreadsheet, a personal Claude or Copilot account, a half-built workflow in n8n. That’s your first data product candidate. Don’t reinvent it. Re-host it.</p>
+
+<p><strong>Land it in the mesh.</strong> Publish your structured output as a Delta or Iceberg table in OneLake. Land your unstructured content in M365 SharePoint with Foundry-grade indexing. Compose the surface in M365 Copilot, or in a Copilot Studio agent, or in a VS Code workspace with GitHub Copilot CLI riding along.</p>
+
+<p><strong>Wire in the better-together pieces deliberately.</strong> If your domain needs ML, point Databricks at the OneLake table — no copy. If your domain needs warehouse-grade SQL or external data sharing, point Snowflake at the same Iceberg table — no copy. The era of triplicate data is over.</p>
+
+<p><strong>Claim governance instead of dodging it.</strong> Register your agent. Accept the audit trail. The point of a sanctioned tier isn’t to slow you down — it’s to let you go faster without the next reorg deleting your work.</p>
+
+<p><strong>Tom Sawyer the next person.</strong> The fastest way to scale a Frontier Firm is to multiply <strong>Prosumers</strong>. Show one colleague how you composed your last endpoint. Then two. The breadth of what any individual can do, multiplied by the breadth of who’s doing it, is the real productivity curve.</p>
+
+<h2 id="the-bold-part">The Bold Part</h2>
+
+<p>Here is the bold claim, said plainly: <strong>the future of the enterprise is not better central IT. It is more, better, governed Prosumers.</strong></p>
+
+<p>Darwin’s Theory: The companies that get this — that wire Microsoft AI, Fabric, Foundry, M365 SharePoint, M365 Copilot, GitHub Copilot CLI and VS Code together with Databricks and Snowflake on OneLake using Delta and Iceberg — aren’t going to be 20% more productive than their competitors. They’re going to be a different category of organism. Distributed, agile, agent-augmented, <strong>Prosumer-powered</strong>. Frontier Firms.</p>
+
+<p>Conway’s Law guarantees it. Toffler predicted it forty years ago. Every wave of shadow IT in the last fifty years rehearsed it. The platform is finally ready.</p>
+
+<p>You were never the problem. You were the prototype.</p>
+
+<p>Now build.</p>
+
+<hr />
+
+<p><em>Built from 33 years of experience and notes and conversations across customer engagements, plus too many late-night threads to count. Co-designed, co-created, co-curated, co-composed, code-with.</em></p>]]></content><author><name>CommonAcumen</name></author><category term="ai and agents" /><category term="ai coding agents" /><category term="ai" /><category term="aicodingagents" /><category term="agents" /><category term="analytics" /><category term="apps" /><category term="architecture" /><summary type="html"><![CDATA[Why Microsoft AI, Fabric, Foundry, M365, and GitHub Copilot CLI — Better Together with Databricks, Snowflake via OneLake, Delta and Iceberg — Finally Give Shadow IT a Home Worth Living In]]></summary></entry><entry><title type="html">Data Mesh Architecture: Extend an existing operational COTS application using cloud-based HA/DR to build out an analytics platform</title><link href="/architecture%20&%20design/learning%20&%20growth/organization%20&%20sustainability/nogreenfield/" rel="alternate" type="text/html" title="Data Mesh Architecture: Extend an existing operational COTS application using cloud-based HA/DR to build out an analytics platform" /><published>2023-03-18T20:10:30+00:00</published><updated>2023-03-18T20:10:30+00:00</updated><id>/architecture%20&amp;%20design/learning%20&amp;%20growth/organization%20&amp;%20sustainability/nogreenfield</id><content type="html" xml:base="/architecture%20&amp;%20design/learning%20&amp;%20growth/organization%20&amp;%20sustainability/nogreenfield/"><![CDATA[<h2 id="abstract">Abstract</h2>
+
+<p>Data Mesh seems most aligned with the principles derived from Cloud Native Apps and Microservices. What about existing applications and databases?  Can you embrace Data Mesh fundamentals to extend an existing operational Commercial off-the-shelf (COTS) application using cloud-based High Availability and Disaster Recovery (HA/DR) features to replicate operational databases and build out an analytics platform?  How can a source-aligned data domain that is not custom built, feed into your data architecture? It’s a buy vs build world that is never a green field.  What about extending a vendor application to collect new data or provide some new AI capability?</p>
+
+<h2 id="introduction">Introduction</h2>
+<p>Organizations have many COTS and custom-built apps that are backed by relational database management systems (RDBMS) from commercial vendor products like Microsoft SQL Server, and Oracle Database as well as open-source RDBMS like PostgreSQL and MySQL.  I am going to focus on SQL Server and Oracle in this post and look at using HA/DR capabilities and architectures not only for business continuity, but also to support read-only secondary replicas for analytical purposes.  I will also focus on Azure examples but there is no reason these ideas can’t be used in on-premises data centers as well as public cloud datacenters like Amazon Web Services (AWS), Google Cloud Platform (GCP), and Oracle cloud infrastructure (OCI).  In fact these could be hybrid scenarios where the primary application and database are on-premises and the secondary application and database reside on a public cloud; or where two Azure availability zones are used for failover while another Azure region is used for an analytical read-only secondary.</p>
+
+<h2 id="sql-server-and-azure-sql-managed-instance">SQL Server and Azure SQL Managed Instance</h2>
+
+<p>One of my favorite features that went GA recently with SQL Server 2022 is Managed Instance link.  This feature enables near real-time data replication from SQL Server to Azure SQL Managed Instance.  The SQL Server can be on-premises or running in Azure on an IaaS VM.  In a scenario where you had an on-premises application backed by SQL Server, the ready-only replica on Azure SQL MI could be used to do the following:</p>
+<ul>
+  <li><strong>Perform Automated Backups</strong> after databases are replicated to managed instance, they are automatically backed up to Azure Blob Storage account with Azure Backup.</li>
+  <li><strong>Offload Read-only Workloads</strong> to SQL Managed Instance deployments in any Azure region worldwide</li>
+  <li><strong>Enable Analytics and App Integration Use Cases</strong> by taking advantage of Azure services by using SQL Server data without migrating the primary SQL Server to the cloud. Examples include reporting, analytics, machine learning, and other jobs that integrate data with resources on Azure.</li>
+</ul>
+
+<p>Here is how the managed instance link feature works:</p>
+
+<p><img src="/assets/images/postimages/nogreenfield/SqlServerSQLMIlink.png" alt="sqlmilink" />)</p>
+
+<p>This slide is from a SQL Server 2022 presentation by Bob Ward and Buck Woody</p>
+
+<p>Similar replication of primary read-write databases to read-only failovers replicas or read-only secondaries can be done using Always-on availability groups.</p>
+
+<h2 id="oracle-database-and-oracle-active-data-guard">Oracle Database and Oracle Active Data Guard</h2>
+
+<p>I am currently working with a customer that is migrating their entire on-premises data center to Azure.  As part of the process, they have numerous applications backed by Oracle Databases that need to be lifted and shifted to Azure.  Just like SQL Server Always-on availability groups, Oracle has a capability called Active Data Guard that can be used for HA/DR and read-only secondaries.</p>
+
+<p>Here is how Oracle Active Data Guard and Oracle Database running on Azure Linux IaaS VMs can be used for HA/DR and replication for reporting and analytics:</p>
+
+<p><img src="/assets/images/postimages/nogreenfield/OracleActiveDataGuard.png" alt="oracledataguard" /></p>
+
+<p>This slide is from a Kellyn Gorman who works with Azure Customers to migrate their Oracle workloads to Azure</p>
+
+<h2 id="change-data-capture-cdc">Change Data Capture (CDC)</h2>
+
+<p><strong>Azure Data Factory CDC</strong></p>
+
+<p>Take a look at Mark Kromer’s demo of the CDC feature in Azure Data Factory <a href="https://learn.microsoft.com/en-us/azure/data-factory/concepts-change-data-capture-resource">Change data capture resource overview</a></p>
+
+<p>Or checkout <code class="language-plaintext highlighter-rouge">Change Data Capture and Managed Airflow in Azure Data Factory | Azure Friday</code></p>
+
+<div class="embed-container">
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/GaWlhlReoA8" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+<p><img src="/assets/images/postimages/nogreenfield/ADFcdc.png" alt="adfcdc" /></p>
+
+<p><strong>ADF, SQL Database, and Databricks Azure Analytics Accelerator</strong></p>
+
+<p>Here is an example that uses an ADF Pipeline to move changes in an Azure SQL database to Azure ADLS storage.  Autoloader is then used in a Databricks notebook to pick up the files and stream the changes into a Delta table in Azure Databricks</p>
+
+<p><a href="https://github.com/DataSnowman/Azure-DataFactory/tree/main/SamplesV2/ChangeDataCapture">Azure Analytics Accelerator</a></p>
+
+<p>I have more details in my post <a href="https://blog.commonacumen.com/blog/cdc/">Data Architecture and Designing for Change in the Age of Digital Transformation</a></p>
+
+<h2 id="get-the-data-into-a-lakehouse">Get the Data into a Lakehouse</h2>
+
+<p>Data Mesh and CDC can help get data into a Lakehouse Architecture to help with reporting, analytics, AI, machine learning, and integration use cases on Azure.  I hope you come back to read other posts on these topics!</p>
+
+<p>Edited by Joey Brakefield.  Thanks Joey.  Proof I need to write these in Word and not only as markdown in VSCode.</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="learning &amp; growth" /><category term="organization &amp; sustainability" /><category term="datamesh" /><category term="lakehouse" /><summary type="html"><![CDATA[Abstract]]></summary></entry><entry><title type="html">Welcome to Common Acumen!</title><link href="/architecture%20&%20design/analytics%20&%20decision%20making/creating%20&%20makings/collaboration%20&%20communication/community%20&%20social%20good/development%20and%20operations/diversity%20&%20inclusion/learning%20&%20growth/organization%20&%20sustainability/resources%20&%20projects/risk%20&%20compliance/society%20&%20change/strategy%20&%20compete/technology%20&%20culture/theory%20&%20practice/thinking%20&%20ideation/welcome-to-commonacumen/" rel="alternate" type="text/html" title="Welcome to Common Acumen!" /><published>2023-02-05T17:34:30+00:00</published><updated>2023-02-05T17:34:30+00:00</updated><id>/architecture%20&amp;%20design/analytics%20&amp;%20decision%20making/creating%20&amp;%20makings/collaboration%20&amp;%20communication/community%20&amp;%20social%20good/development%20and%20operations/diversity%20&amp;%20inclusion/learning%20&amp;%20growth/organization%20&amp;%20sustainability/resources%20&amp;%20projects/risk%20&amp;%20compliance/society%20&amp;%20change/strategy%20&amp;%20compete/technology%20&amp;%20culture/theory%20&amp;%20practice/thinking%20&amp;%20ideation/welcome-to-commonacumen</id><content type="html" xml:base="/architecture%20&amp;%20design/analytics%20&amp;%20decision%20making/creating%20&amp;%20makings/collaboration%20&amp;%20communication/community%20&amp;%20social%20good/development%20and%20operations/diversity%20&amp;%20inclusion/learning%20&amp;%20growth/organization%20&amp;%20sustainability/resources%20&amp;%20projects/risk%20&amp;%20compliance/society%20&amp;%20change/strategy%20&amp;%20compete/technology%20&amp;%20culture/theory%20&amp;%20practice/thinking%20&amp;%20ideation/welcome-to-commonacumen/"><![CDATA[<p>Welcome to Common Acumen.  In this blog you will find my posts from the Microsoft Data Architecture blog over the years and newer posts.</p>
+
+<p>The goal of this blog is to improve your ability to make good judgments and quick decisions in the Analytics, and Data and AI domain.  The inspiration for the blog is to learn about topics like Analytics, AI and Machine Learning, Business Intelligence, Data Mesh, Data Lakehouse, Data Marts, and Data Warehousing.  The hope is to make this common acumen for everyone earlier in their life and career.</p>
+
+<p>Here are some categories and tags of interest that I hope to cover in my posts:</p>
+
+<p>categories:</p>
+<ul>
+  <li>architecture &amp; design</li>
+  <li>analytics &amp; decision making</li>
+  <li>creating &amp; makings</li>
+  <li>collaboration &amp; communication</li>
+  <li>community &amp; social good</li>
+  <li>development and operations</li>
+  <li>diversity &amp; inclusion</li>
+  <li>learning &amp; growth</li>
+  <li>organization &amp; sustainability</li>
+  <li>resources &amp; projects</li>
+  <li>risk &amp; compliance</li>
+  <li>society &amp; change</li>
+  <li>strategy &amp; compete</li>
+  <li>technology &amp; culture</li>
+  <li>theory &amp; practice</li>
+  <li>thinking &amp; ideation</li>
+</ul>
+
+<p>tags:</p>
+<ul>
+  <li>changedatacapture</li>
+  <li>datamesh</li>
+  <li>lakehouse</li>
+  <li>skilling</li>
+  <li>solutions</li>
+  <li>strategy</li>
+</ul>
+
+<p>Hope you enjoy the posts.</p>
+
+<p>Darwin Schweitzer <a href="https://www.linkedin.com/in/darsch">LinkedIn</a></p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="analytics &amp; decision making" /><category term="creating &amp; makings" /><category term="collaboration &amp; communication" /><category term="community &amp; social good" /><category term="development and operations" /><category term="diversity &amp; inclusion" /><category term="learning &amp; growth" /><category term="organization &amp; sustainability" /><category term="resources &amp; projects" /><category term="risk &amp; compliance" /><category term="society &amp; change" /><category term="strategy &amp; compete" /><category term="technology &amp; culture" /><category term="theory &amp; practice" /><category term="thinking &amp; ideation" /><category term="changedatacapture" /><category term="datamesh" /><category term="lakehouse" /><category term="skilling" /><category term="solutions" /><category term="strategy" /><summary type="html"><![CDATA[Welcome to Common Acumen. In this blog you will find my posts from the Microsoft Data Architecture blog over the years and newer posts.]]></summary></entry><entry><title type="html">Bring Vision to Life with Three Horizons, Data Mesh, Data Lakehouse, and Azure Cloud Scale Analytics</title><link href="/architecture%20&%20design/learning%20&%20growth/organization%20&%20sustainability/strategy%20&%20compete/dmdl/" rel="alternate" type="text/html" title="Bring Vision to Life with Three Horizons, Data Mesh, Data Lakehouse, and Azure Cloud Scale Analytics" /><published>2022-05-19T08:14:30+00:00</published><updated>2022-05-19T08:14:30+00:00</updated><id>/architecture%20&amp;%20design/learning%20&amp;%20growth/organization%20&amp;%20sustainability/strategy%20&amp;%20compete/dmdl</id><content type="html" xml:base="/architecture%20&amp;%20design/learning%20&amp;%20growth/organization%20&amp;%20sustainability/strategy%20&amp;%20compete/dmdl/"><![CDATA[<p>Check out this past post from the Microsoft Data Architecture Blog in May 2022</p>
+
+<p><img src="/assets/images/postimages/BringVision/BringVisionToLife.png" alt="Data Mesh and Data Lakehouse" /></p>
+
+<h2 id="introduction">Introduction:</h2>
+
+<p>Many of you may have been focused on analytics for years and have shown audacity, acumen, and determination in improving your decision-making and the decisions of those around you.  You have personified Teddy Roosevelt’s “the person in the arena” as opposed to sitting on the sidelines and watching.  Whether you have been in the arena, are new to the space, or can’t wait to get on the field, I hope this will inspire thought, discussion, debate, and action.</p>
+
+<p>There’s always been organizational, architectural, and technical blockers to successfully building, deploying, maintaining, and using analytical systems.  I have experienced many of these firsthand as an implementer and user since I wrote my first SQL statement back in 1993.  So much has changed in the last 29 years, but so much has also stayed the same.  We are still getting, preparing, modeling, analyzing, and visualizing data regardless of role (Data Analyst, Data Scientist, Data Engineer, Data Consumer) and tools (BI, AI/ML, Pipelines/Notebooks, Report/Dashboards) used.  It’s now just with more diverse personnel using more affordable, intuitive, and scalable tools than in past decades.  I am going to consider analytical system architecture from a strategic, organizational, architectural, and technical point of view.</p>
+
+<p>Modeling an organization’s strategic vision for the future requires changing the organization in incremental, evolutionary, and revolutionary ways.  Analytics is an important catalyst for change, innovation, and transformation.  People using analytical tools can help the organization make better data-driven decisions that support the transition from where an organization sits today to somewhere on and beyond the horizon.  Getting started involves tactical assessment of the current state (As-Is) architecture, and discussion and prioritization to define the future state (To-Be) architecture.  These first steps can lead to prioritizing which systems should receive operational enhancements initially, and what data, tools, and processes should be used to drive innovation.  Essentially transforming complex systems is part of strategy and you need a strategy to vision cast to hook others to move towards the destination.  I think that the Data Mesh and Data Lakehouse approaches could help tactically drive change and realize vision.</p>
+
+<p><img src="/assets/images/postimages/BringVision/strategyApproachTactics.png" alt="strategy" /></p>
+
+<p>The methodology I propose to explore and start down the path towards realization of this analytic strategic vision is through the composition of these concepts:</p>
+
+<ul>
+  <li>Three Horizon Model/Framework – strategic</li>
+  <li>Data Mesh Sociotechnical Paradigm – organizational</li>
+  <li>Data Lakehouse Architecture - architectural</li>
+  <li>Azure Cloud Scale Analytics Platform – technological</li>
+</ul>
+
+<h2 id="exploration">Exploration:</h2>
+
+<p>Like exploratory data analysis (EDA) performed on a dataset, I decided to spend some time exploring these concepts during a recent 7-day camping trip to <a href="https://www.clallamcountywa.gov/Facilities/Facility/Details/Salt-Creek-Recreation-Area-26">Salt Creek Recreation Area</a> near Port Angeles, WA.</p>
+
+<p><img src="/assets/images/postimages/BringVision/SaltCreekIsland.jpg" alt="saltcreek" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">I recommend staying in this beautiful setting with small islands, tidal pools, trees, bald eagles, and snowcapped mountains.</code></p>
+
+<p>By the time I reached the midpoint of camping I felt great about Data Mesh and Data Lakehouse.  I had been coming to the conclusion about the better together synergies for a while, and the more I read <a href="https://learning.oreilly.com/library/view/data-mesh/9781492092384/">Data Mesh</a> by Zhamak Dehghani (Data Mesh founder – Thoughtworks) the more it appeared that Data Mesh and Data Lakehouse need each other.   Watching Matei Zaharia’s (Chief Technologist &amp; Cofounder – Databricks) YouTube video <a href="https://www.youtube.com/watch?v=a00rdlNtW98">Data Mesh and Lakehouse</a> solidified this point further.</p>
+
+<h2 id="three-horizons-model">Three Horizons Model</h2>
+
+<p>I have been reading about the McKinsey Three Horizons model introduced in the book <a href="https://www.getabstract.com/en/summary/the-alchemy-of-growth/10083">The Alchemy of Growth - Practical Insights for Building the Enduring Enterprise</a> by Authors Mehrdad Baghai, Stephen Coley and David White.  Three Horizons, like analytics, has been seasoned over multiple decades.  This strategy-focused methodology appears promising to help align stakeholders from the business (management and leadership outside of Information Technology).  Helping them envision, embrace, and invest in innovation and transformation.</p>
+
+<p>Looking at the diagram below from <a href="https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/enduring-ideas-the-three-horizons-of-growth">McKinsey’s Enduring Ideas: The three horizons of growth</a> you can get an idea of how an organization can drive business value creation (growth and profit) over time by reaching: Horizon 1 - improving performance of existing core businesses, Horizon 2 - building new emerging businesses, and Horizon 3 - creating viable new options through research projects or pilot programs.</p>
+
+<p><img src="/assets/images/postimages/BringVision/threeHorizon.png" alt="3horizons" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Here is a similar diagram in the context of operational and analytical systems related to cloud maturity and accumulated total returns.</code></p>
+
+<p><img src="/assets/images/postimages/BringVision/horizonsDataDrivenDecisions.png" alt="horizonddd" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">This diagram is another view of 3 Horizons that illustrates H1 operational enhancements to existing business systems and its importance to setting up H2 innovation and H3 transformation possibilities.</code></p>
+
+<p><img src="/assets/images/postimages/BringVision/horizonsOrTransformation.jpg" alt="3Hdataai" /></p>
+
+<p>The reason I like the 3 Horizons model is that strategy is important to the leadership in companies and the support of leadership is essential for architecting analytical systems.  Every successful project or program needs some sustained BANTR – Budget, Authority, Need, Timing, and Resources (not the Ted Lasso fictional dating app).  As we move to looking at Data Mesh you can see that some strategic vision is going to be applied because it will require a new approach to how teams are organized, and what the team’s priorities are.  A similar shift has already taken place with the distribution and scaling of operational systems that use microservices, domain-based teams (2 pizza teams – small enough that they can be fed with two extra-large pizzas), and distributed architectures enabled by containers and orchestrators like Kubernetes.</p>
+
+<h2 id="data-mesh">Data Mesh</h2>
+
+<p>As defined in the book <a href="https://learning.oreilly.com/library/view/data-mesh/9781492092384/">Data Mesh</a> by Zhamak Dehghani, Data Mesh is a socio-technical paradigm based on four principles:</p>
+
+<ul>
+  <li>Principle of Domain Ownership - decentralization and distribution of data responsibility to people who are closest to the data</li>
+  <li>Principle of Data as a Product - the analytical data provided by the domains is treated as a product, and the consumers of that data should be treated as customer</li>
+  <li>Principal of the Self-serve Data Platform - self-serve data platform services that empower domains’ cross-functional teams to share data</li>
+  <li>Principal of Federated Computational Governance - a decision-making model led by the federation of domain data product owners and data platform product owners, with autonomy and domain-local decision-making power, while creating and adhering to a set of global rules</li>
+</ul>
+
+<p>The Domains make data products out of domain data that can be Source-aligned domain data (the facts and reality of the business), Aggregate domain data (long-standing aggregate data composed from multiple source-aligned domains), or Consumer-aligned domain data (the applications that consume the data, or data users such as data scientists or analysts).</p>
+
+<p>With Data Mesh you organize teams in a distributed way by Domain (focus on Business or Activity being supported) vs centralized teams of Data Warehouse specialists for analytics.  In my way of thinking if you are going to build Data Lakehouse’s we need more skilled resources. The construction business scales to meet the demand for building and maintaining structures, so why shouldn’t analytics scale to do the same with data structures. The Data Mesh approach can help with the bottlenecks of centralized organizational structures and centralized technical architectures.  Data Mesh could also limit the power struggles where the Data Warehouse team is the only standard that bullies everyone else around, blocks entry into the Data Warehouse, or throttles query access when you want to get data out.  If a group wants to share data let them get some cloud-based storage and compute, and not be blocked by another group.  Proprietary storage and table formats along with limited tools for query access (just SQL) are the legacy of on-premises MPP Data Warehousing appliances.  Cloud-based Data Warehouses have changed this dynamic but the organizational structure and technological consolidation into one place approach still may be far from distributed.  Not because it could not be but because the team and/or organization wants it to be that way.</p>
+
+<p>Data Mesh Domains have the same team responsible for the operational (OLTP) system and the analytical (OLAP) system.  Synapse Link HTAP (Hybrid Transaction/Analytical Processing) has features for <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link">Cosmos DB</a> and <a href="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/data/azure-sql-htap">Azure SQL Database</a>.  For teams that are responsible for Source-aligned domain data in the Data Mesh world, Synapse Link HTAP could be an approach.</p>
+
+<p>When it comes to self-serve data platforms, I think that tools like Power BI have done a great job of providing self-service for Data consumers and Data Analysts.  Databricks and Synapse Notebooks, and Data Factory and Synapse Pipelines or Databricks Delta Live Tables are great tools for Data Engineers.  Also Databricks Notebooks, Azure Machine Learning Notebooks, and AutoML have Data Scientists covered.</p>
+
+<p>When it comes to Data Governance, Data Officers must go on both offense to increase access to data, and on defense to protect data.  Tools like M365 Information Protection, Power BI Sensitivity Labels, and Azure Purview access policy seem to help with the Governance principle.</p>
+
+<p><img src="/assets/images/postimages/BringVision/synergies.png" alt="synergies" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">I really see strong synergies between the Three Horizons Model and the Data Mesh Paradigm</code></p>
+
+<h2 id="data-lakehouse-architecture">Data Lakehouse Architecture</h2>
+
+<p><img src="/assets/images/postimages/BringVision/lakehouse.png" alt="lakehouse" /></p>
+
+<p>thumbnail image 8 of blog post titled Bring Vision to Life with Three Horizons, Data Mesh, Data Lakehouse, and Azure Cloud Scale Analytics</p>
+
+<p><a href="https://databricks.com/blog/2020/01/30/what-is-a-data-lakehouse.html">What is a Lakehouse? - The Databricks Blog</a></p>
+
+<p>A Data Lakehouse is a new, open architecture that combines the best elements of data lakes and data warehouses.</p>
+
+<p>Some of the characteristics of a Lakehouse include the use of:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Low-cost Object Storage (like ADLS) decoupled from compute
+* Batch and Stream processing
+* Diverse Workloads
+    * Data science
+    * AI and Machine learning
+    * BI, SQL and analytics
+* Diverse and open data formats and diverse data typed
+    * File formats: Avro, CSV, Json, ORC, Parquet
+    * Table formats: Delta, Hudi, Iceberg, Hive Acid
+    * Tables, images, video, audio, semi-structured data, and text.
+* Metadata Layers
+    * ACID Transactions
+    * Versioning and Time travel
+    * Governance
+* Diverse Engines, Tools, and Languages
+    * Presto, Dremel, RDBMS External tables
+    * Great SQL performance with Photon engine
+    * PySpark, Scala, Java language support
+    * Jupyter, Tensorflow tool support
+* Sharing and governance
+    * Delta Sharing
+    * Unity Catalog
+    * Schema enforcement
+</code></pre></div></div>
+
+<h2 id="data-mesh-and-data-lakehouse-better-together">Data Mesh and Data Lakehouse better together</h2>
+
+<p>IMO Data Mesh using a Data Lakehouse Architecture, built on Azure Data &amp; AI and Data Governance Services can really help organizations.  I see domain-driven design foundation of Data Mesh and the data-driven decisions enabled by Data Lakehouse as a great one-two punch.</p>
+
+<p><img src="/assets/images/postimages/BringVision/ddd.jpg" alt="ddd" /></p>
+
+<h2 id="azure-cloud-scale-analytics">Azure Cloud Scale Analytics</h2>
+
+<p>Microsoft Azure has accelerated analytics at a faster rate than I experienced in the first 20 years of my career.  Cloud competition has become a space race that accelerates transformation.  When building a Cloud Scale Analytics architecture to define, model, and reach an organization’s strategic horizons, architects must consider everything from how teams are organized (see Data Mesh) to how to simplify and unify operational and analytical data systems (see Data Lakehouse, Synapse Link HTAP).</p>
+
+<p>Azure is a great Cloud Scale Platform for architecting Analytical Systems.  It includes Azure Data Lake Storage (ADLS) object storage, Azure Data Factory batch and Event Hub, Azure Databricks and Azure Synapse Spark pool streaming pipelines for data engineering.  Data Science AI and Machine Learning tools in Azure Machine Learning, Azure Databricks, and Azure Synapse. Data Management capabilities in ADLS, Azure Databricks, and Azure Synapse SQL and Spark pools.  Data Analyst tools in Power BI and Excel.</p>
+
+<p><img src="/assets/images/postimages/BringVision/azureDataServices.jpg" alt="ads" /></p>
+
+<p>The following image shows some examples of various cloud services that could be used by teams representing Consumer-aligned, Aggregate, and Consumer-aligned data domains.  These domains could be governed by Azure Purview and Azure Active Directory in support of access policy and discovery and classification of data existing in the organization.</p>
+
+<p><img src="/assets/images/postimages/BringVision/dmDomainData.JPG" alt="dmdomdata" /></p>
+
+<h2 id="balancing-current-realities---but-just-a-minute">Balancing Current Realities - But just a minute:</h2>
+
+<p>The week after camping I was back to the realities of work and the challenges of modernizing an existing house.  It is not a Lakehouse or a Warehouse, but a residential house.  We were getting new windows and exterior doors which needed replacing on the 30-year-old structure.  I am thinking pragmatically here because most organizations might be working with legacy systems for operational and analytical data that could be more than decades old.  To balance my fondness for Data Mesh and Data Lakehouse (two new shiny objects) I need to measure them against the analytics concepts that have come before.  Data Mesh and Data Lakehouse are still relatively new.  Therefore, I am going to balance my hope for the To-Be future of analytical system architectures with the reality of keeping the lights on with the current As-Is analytical system architectures. As a result, I will discuss another concept, Data Fabric, which is also a new emerging trend.  Data mesh is going to play nice with new operational systems based on microservices and distributed event streaming, but how will it do with Legacy monolithic on premises apps?  Tactically what projects are candidates for Data Mesh and Data Lakehouse, versus what should left alone and use alternative ways to integrate?</p>
+
+<p><img src="/assets/images/postimages/BringVision/doorWindow.png" alt="doorwindow" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Keep the lights on and leverage what an organization already has – Modernize the House</code></p>
+
+<h2 id="bonus-concepts">Bonus concepts:</h2>
+
+<p>What about Legacy Analytics and keeping the lights on – Use Data Fabric</p>
+
+<p>IMO Data Fabric is an umbrella term that covers some emerging technology, as well as some existing seasoned technologies that has been around decades before Data Mesh and Data Lakehouse.  Initially some of the data virtualization technologies previously known as Enterprise Information Integration (EII) have been marketed as logical analytics systems that don’t move or copy data from sources but get it from sources without using ETL and Data Warehousing - an alternative approach.</p>
+
+<p>According to Gartner data fabric is a design concept which requires multiple data management technologies to work with the aim of supporting “frictionless access and sharing of data in a distributed network environment”.  I have also seen Data Fabric described as modernizing existing investments like databases, data warehouses, data lakes, data catalogs, and data integration platforms.</p>
+
+<p>Data Fabric helps make data the fabric of our lives.  For me Data Fabric is at least three things:</p>
+
+<ul>
+  <li>New naming of data management technologies that have been available in some cases for 2 or more decades: BI, ETL, OLAP/In-memory, Data Virtualization, Replication, Change Data Capture (CDC)</li>
+  <li>Newer emerging data management technologies like Data Sharing, Distributed event streaming, Distributed query engines like Spark, Presto and Dremel; and External table access to files using RDBMS systems</li>
+  <li>Some newer AI enabled features and catalogs that are showing up as new vendor features</li>
+</ul>
+
+<p>The first Decision Support Systems (DSS) or BI tools I used had pipelines (Metaphor capsules), and sematic layers (Metaphor, Brio, Business Objects) and OLAP databases (Essbase, Analysis Services).  These tools (as Power BI and Tableau are today) were sold as solutions that could work with or instead of data warehouses.  Business Objects semantic layers (universes) could be created on top of OLTP database schema, an Operational Data Store (ODS), or star (ROLAP) schemas from Data Marts or Enterprise Data Warehouses (EDW).  Sales, marketing, and finance are examples of departments that were not going to wait for the EDW to be built.</p>
+
+<p>In the case of Metaphor it was marketed as an Executive Information System (EIS), but it looked like an ETL tool that could run pipelines on demand.  Data preparation/ETL tools could bring data into Lotus or Excel, like the way Power Query does today in Excel.</p>
+
+<p>CDC and Replication tools were used to create an ODS that was used as data hubs for integration and sources for Reporting.  Early EII tools like Nimble Technology were acquired by reporting tools like <a href="https://www.crn.com/news/applications-os/18824829/actuate-acquires-nimble-technology.htm">Actuate</a> to become it’s semantic layer.</p>
+
+<p>Emerging examples of Data Fabric include Data Sharing like Databricks Delta Sharing, Snowflake Secure Data Sharing, and Azure Data Share.  Distributed query engines like Spark, Presto and Dremel are examples of Data Fabric that can make Data Lakehouse and Data Mesh work.</p>
+
+<p>External tables on RDBMS systems like Azure Synapse Analytics Serverless or Dedicated pools can be used for Lakehouse and Data Warehouse queries or for loading DW tables, and <a href="https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/data-virtualization-overview">Azure SQL Managed Instance</a> can query open file formats like Parquet.</p>
+
+<p>Examples of Data Fabric/Data Virtualization Types (Not exhaustive list and my Opinion):</p>
+
+<p><img src="/assets/images/postimages/BringVision/dataFabricTable.png" alt="datafabric" /></p>
+
+<p>Except for Data Replication (which maintains the source schema) and Distributed Event Processing (which has a schema registry) most of the items in the table above create a data layer on top of data sources that allows for the integration of data.  The reason I have included Data Replication and Distributed Event Processing in the table is because these are practical ways of getting data out of the operational systems into changing copies that data layers can be created on top of.  I am not sure that practical coping of data can be avoided when it comes to integration, security, and retrieval of data.  There is always going to be a copy whether it be a replicated transactional database, events set to multiple places by a distributed event processing system like Kafka, a landing zone for files that are processed and rewritten, or a BI tool with data cached in an in-memory database that is refreshed on a BI service like Power BI.</p>
+
+<p>Improving access to data by consumer-aligned custom applications, data scientists, data analysts, and data consumers justifies the copies.  The data product needs consumers.</p>
+
+<p>IMO Data Mesh and Data Lakehouse make better To-Be data sources for Data Fabric technologies because much of the logic is built into the outputs vs just pointing to the original sources.  Find the right use case, business process, or domain and build your own Data Mesh, Data Lakehouse, and Data Fabric with today’s As-Is tools as the To-Be market evolves.  Prioritize business critical operational systems and modernize those operational systems with unification to analytical systems as part of the design.</p>
+
+<h2 id="an-aside-about-data-marts-vs-data-warehouses">An aside about Data Marts vs Data Warehouses</h2>
+
+<p>What is appealing to me about Data Mesh and Data Lakehouse is that it is distributed.  I have always been a distributed fan.  I was a Ralph Kimball follower, and data mart practitioner who started building data marts in 1996.  The tooling has always been the same for data marts and data warehouses (Data Integration - ETL/ELT, Relational Database, BI Tool), but the philosophy was different – data marts where bottom-up and had some department autonomy vs enterprise data warehouses were top down and centralized.  Data marts were on a central RDBMS to combine the data needed for the business process, but they were still distributed.  Microsoft SQL Server 7.0 and future versions were great places to build data marts.  The challenge with data marts was that you could not fit all the fact tables on a single RDBMS and not every group would use the same database vendor for their data mart.  BI and data integration tools could glue it all together, but it was siloed.</p>
+
+<p>Initially the goal was to deliver data marts in 90 days, but this did not scale because:</p>
+
+<ul>
+  <li>Data Marts never scaled the teams up or out to additional teams</li>
+  <li>After delivering a couple of Data Marts the team could fail under the technical debt of maintaining the existing Data Marts so they couldn’t also create new ones</li>
+  <li>The more that were built the higher the complexity got</li>
+  <li>Data Mart teams had no authority over the source applications, so they continually needed to fix data quality that was never fixed upstream in the source system</li>
+</ul>
+
+<p>Did data marts fail because they were distributed?  Or did they fail because the architecture was monolithic?  Did they fail, or did BI tools consume the approach and just do more of what the data mart did like data integration, data modeling, data storage, and data access?</p>
+
+<p>I think the centralized attitudes in Data Warehousing was one of the reasons that Data teams stayed small and specialized as controlled communities.  If you believe in one version of the truth you keep the community small.  If you accept the ambiguity that exists in life you let more people participate - it can’t be centralized.  All the spread-marts, Microsoft Access databases, Budgeting and Planning OLAP Cubes, SQL Server Data Marts, Analysis Services Cubes, and Reporting Services, Brio, Business Objects, Cognos, Microstrategy, Nquire (OBIEE), Tableau, Power Pivot, and Power BI assets have happened regardless of whether a Data Warehouse existed or not.  Will the concepts of Data Mesh and Data Lakehouse fully staffed become the domain data sources that Data Marts and Data Warehouses had mixed success achieving.</p>
+
+<h2 id="customer-scenarios">Customer Scenarios</h2>
+
+<p>Couple customers scenarios I have recently seen that are reasons to think about distributed vs centralized approaches:</p>
+
+<ul>
+  <li>
+    <p><strong>Not treating Data as a Product:</strong> The IT Pros responsible for the analytical source-aligned domain data are apprehensive to improve the integration into operational data stores (ODS) and don’t see the aggregate domain data team as a customer.</p>
+  </li>
+  <li>
+    <p><strong>Not defining Domain Ownership:</strong> IT Leadership are eager to expand to an enterprise data warehouse focus despite the Institutional Research (IR) team’s wants and needs to get going on a project that is more data mart worthy.  The team must take on the burden and technical debt of a centralized approach.</p>
+  </li>
+</ul>
+
+<p>The first scenario needs the Data Mesh and Data Lakehouse approach to restore the trust between the IT team and the analytics team.  IT needs to create some SADD teams that are more responsive to changes to the source systems, so the analytics team can be an ADD team.</p>
+
+<p>The second scenario needs the Data Mesh and Data Lakehouse approach because the centralized approach is not going to make anyone happy, may take too long, and be too expensive (can’t distribute the costs).  IT Leadership needs to build SADD Data Mart, Data Warehouse, or Data Lakehouse so the IR team can become an ADD Data Mart or Data Lakehouse.  IR does not need to be a Data Warehouse.</p>
+
+<p>The following tables show some of the options a Source-aligned Domain Data (SADD) team can use to provide Data Products, and what an Aggregate Domain Data (ADD) team would need to do based on what the SADD team provided.  A Consumer-aligned Domain Data (CADD) team could get data from either the SADD or ADD.  I would say that the replication and Operational Data Store (ODS) or Data Lake are the most common ways that data sources are provided for analytics currently.  It would be the exception currently that a SADD team would provide Data Mart, Data Warehouse, or Data Lakehouse functionality to potential ADD teams.</p>
+
+<p><strong>Source-aligned Domain Data (SADD) Product Options</strong></p>
+
+<p><img src="/assets/images/postimages/BringVision/sadd.jpg" alt="sadd" /></p>
+
+<p><strong>Aggregate Domain Data (ADD) Sources Options</strong></p>
+
+<p><img src="/assets/images/postimages/BringVision/add.jpg" alt="add" /></p>
+
+<p><strong>Consumer-aligned Domain Data (CADD)</strong></p>
+
+<p>Apps that consume the data or data users such as Data Scientists, Data Analysts, or Data Consumers.  Using queries, notebooks, custom apps, portals, reports, dashboards.</p>
+
+<p>Get data from the most mature ADD or SADD product.  The least mature product would be SADD Replication, and the most mature would be ADD Data Lakehouse.  I am categorizing Data Lakehouse as more mature than Data Mart or Data Warehouse because the user could query across multiple SADD or ADD Data Lakehouse tables using a query spanning multiple Delta Tables (Colocation important to make this practical).</p>
+
+<p><img src="/assets/images/postimages/BringVision/typesOfDataDomains.jpg" alt="typesofdd" /></p>
+
+<p>The drawing above only depicts the Data Lakehouse as storage leaving out the fact that compute would be needed to move data out of the data sources and do the data processing required to transform the data (by perhaps a data engineer in the aggregate domain).  The data consumers in the consumer-aligned domain would also need compute to get data out of the Data Lakehouse but they could do this in a serverless way vs needing to pay to persist the data.</p>
+
+<p>This really seems like a decent way of sharing the costs of usage to the teams that are doing the work creating their data product.  If the economics of cost to value don’t workout then that group can adjust their usage appropriately.</p>
+
+<p><strong>Roles involved, and tools and processes</strong></p>
+
+<p>Here I would like to look at the Data Analyst, Data Scientist, Data Engineer, and Data Consumer roles and the tools they might use and the process they might follow.  I general the Data Consumer uses artifacts created by the 3 other roles.  The other 3 roles all follow similar processes and could use similar tools.  The Data Analysts and Data Scientists can leverage work done by the Data Engineer or go do their own data processing.  This is where the friction exists between distributed autonomy and distributed teams.  The better the SADD and ADD team the less likely the CADD team or individual is to go do data processing themselves.</p>
+
+<p>The diagram from the <a href="https://learning.oreilly.com/library/view/implementing-a-smart/9781491983492/">O’Reilly report “Implementing a Smart Data Platform”</a> shows the closed loop steps of data processing.  My premise is that a data analyst can perform the steps in Power BI, the data scientist can do much of this in a Jupyter notebook, and the data engineer can use pipelines and Spark notebooks that augment the efforts of the other two roles.</p>
+
+<p><img src="/assets/images/postimages/BringVision/closedLoopOfDataProcessing.png" alt="closedloop" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Closed loop of data processing (figure courtesy of Wenfeng Xiao) from the O’Reilly report “Implementing a Smart Data Platform”</code></p>
+
+<h2 id="concluding-thoughts">Concluding Thoughts:</h2>
+
+<p>This brings me to my back issue.  I was not sure whether to ice it, use a heating pad, take anti-inflammatories, stretch, lie flat on my back.  While looking for ideas I found out that the advice for treating soft-tissue injuries had changed.  Rice had moved to Police, and then on to Peace and Love.</p>
+
+<p><img src="/assets/images/postimages/BringVision/RiceToPeaceAndLove.png" alt="rice" /></p>
+
+<p><a href="https://www.verywellhealth.com/the-police-principle-for-acute-sprains-and-strains-2696549">The P.O.L.I.C.E. Principle Emergency Treatment for Acute Injuries</a></p>
+
+<p><a href="https://bjsm.bmj.com/content/54/2/72.long">Soft-tissue injuries simply need PEACE and LOVE</a></p>
+
+<p>The basic metaphor here is that things change.</p>
+
+<p>When to use <strong>DW</strong> (RICE) vs <strong>DF</strong> (POLICE) vs <strong>DM</strong> and <strong>DL</strong> (PEACE and LOVE)?</p>
+
+<p>Below is a recent slide I used in a recent presentation.  I see some definite advantages for Data Mesh and Data Lakehouse related to diverse data types, AI/ML and BI Support, the use of low-cost object storage, diverse tools and languages, and options for both serverless and persistent compute.  For Data Warehouse you many have the query engine of the DW service itself, the data may be in a proprietary data format (but it could map to open formats as external tables), might use proprietary  storage (although may use low-cost object storage), and the compute may be persistent (although it could be paused or scaled as needed).  For my broad definition of Data Fabric it can leverage existing systems which could lead to performance issues on the source system requiring at least replication of the database, I am not convinced that don’t move or copy the data is realistic, or the use of the existing systems storage would work and that the storage and caching of data would need persistent compute.  I am much more sure of data layers for BI semantic layers than I am of data layers for integration that are not persisted by a copy in OLAP/In-memory, Data Mart, Data Warehouse, or Data Lakehouse.  This is definitely getting more blurred with Query engines on top or Parquet or Delta tables, but someone did a bunch of work to create those file and table formats ahead of time and the data was copied.</p>
+
+<p><img src="/assets/images/postimages/BringVision/whenToUseWhich.png" alt="whentouse" /></p>
+
+<p><strong>Guidance</strong></p>
+
+<p>Do you put new windows in the old house or move to a Lakehouse?</p>
+
+<ul>
+  <li>Data Warehouse, Data Fabric, Data Mesh, and Data Lakehouse can be complementary but also compete based on ideology/belief</li>
+  <li>If you need RDBMS familiar features like Row-level security, use Data Warehouse or OLAP/In-memory Data Fabric</li>
+  <li>For existing Analytics architectures, use Data Fabric to connect, compose, and consume what you already have and selectively migrate priority Source-aligned domain data to Data Mesh and Data Lakehouse, because rip and replace is expensive</li>
+  <li>For new (green field) Cloud Scale Analytics projects, use Data Lakehouse and Data Mesh (DL and DM work well together) To Be your new doors and windows; then see if the neighbors with the 30-year-old houses follow suit.</li>
+  <li>Remember technical debt requires scaling workers (code development, modification, and maintenance) and is a bigger lock-in than vendor lock-in</li>
+  <li>More people and more talent development when capital is decentralized.  Less bureaucracy, more staffing, less expert bias, and a little friendly competition (new windows)</li>
+  <li>Building organizational and technical maturity takes time and participation</li>
+  <li>Recognize the existing politics between OLTP and Analytics (OLAP) software developers on which is priority</li>
+  <li>Milk Carton Rule: “Instead of dwelling on what you can’t change, focus on what you can.”   This includes others views of centralized and distributed.</li>
+  <li>Like Waterfall to Agile, centralized Data Warehouse to distributed Data Mesh with Data Lakehouse is going to take some time for adoption and transformation</li>
+</ul>
+
+<p>IMO Azure Synapse Guidance for DW, DM, and DL</p>
+
+<ul>
+  <li>When using Synapse Dedicated MPP pool use the RDBMS as a High-Performance Query endpoint not an ELT tool</li>
+  <li>For Data Integration leverage Pipelines, Spark pools, and Spark Notebooks for ETL/ELT on ADLS using Parquet/Delta</li>
+  <li>For Power BI in import mode refresh datasets using Lakehouse and Serverless SQL and for direct query mode use Dedicated pool</li>
+  <li>For telemetry captured in Azure use Data Explorer (Kusto), for example data collected by Azure Application Insights or Azure Monitor</li>
+  <li>For teams that are responsible for Source-aligned domain data, consider Synapse Link HTAP (Hybrid Transaction/Analytical Processing) for Apps backed by <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link">Cosmos DB</a> and <a href="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/data/azure-sql-htap">Azure SQL Database</a></li>
+  <li>For streaming applications delivering data using Kafka, Event Hub, or IoT Hub consider using Spark Structured Streaming in Azure Databricks, or Azure Synapse Spark pools.  Captured data in ADLS container can be queried in Spark, Synapse Serverless SQL, or Azure Databricks SQL endpoints.</li>
+  <li>For AI/ML needs use Lakehouse and Spark (Databricks or Synapse Spark pools and Notebooks) and/or Azure ML and Cognitive Services</li>
+</ul>
+
+<p>Last week as I sat in the Building 34 Café on the Redmond campus between my Chiropractic and Acupuncture appointments I feel like my back issue is actually improving.  Sometimes it takes multiple disciplines (Chiropractic, Acupuncture, Physical Therapy, Pharmacology) and modalities to diagnose, treat, rehabilitate, and prevent an injury.  I think medical professionals make decisions just like decision makers in other domains.</p>
+
+<p>Hopefully this post can help your organization justify investment in analytics and exploration of some of these concepts discussed to break the pain-spasm cycle that exists between the spread-mart wild wild west and the locked down Enterprise Data Warehouse!  Please let me know how you feel about my depiction of Three Horizons, Data Mesh, Data Lakehouse, Cloud Scale Analytics, Data Fabric, Data Marts, and Data Warehouse; the customer scenarios, roles involved, and tools and processes used to architect them.</p>
+
+<p>If you have not categorized me yet, I am a distributed data marts, data mesh, and data lakehouse fan that would surround these concepts with distributed AI/ML, BI, and Custom Apps.</p>
+
+<p><strong>Gazing over the horizon, the improved view will “Bring Vision to Life”!</strong></p>
+
+<p><img src="/assets/images/postimages/BringVision/dogdoor.jpg" alt="dogs" /></p>
+
+<p><strong>Links to Data Mesh, Data Lakehouse, Data Fabric, and Azure Resources</strong></p>
+
+<p><a href="https://powerbi.microsoft.com/en-us/desktop/">Power BI Desktop</a></p>
+
+<p><a href="https://powerbi.microsoft.com/en-us/">powerbi.microsoft.com</a></p>
+
+<p><a href="https://powerquery.microsoft.com/en-us/excel/">Excel Power Query</a></p>
+
+<p><a href="https://docs.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-introduction-self-service">Power BI Dataflows</a></p>
+
+<p><a href="https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15">Azure Data Studio</a></p>
+
+<p><a href="https://azure.microsoft.com/en-us/features/storage-explorer/">Azure Storage Explorer</a></p>
+
+<p><a href="https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction">Azure Data Lake Storage</a></p>
+
+<p><a href="https://docs.microsoft.com/en-us/azure/data-factory/">Azure Data Factory</a></p>
+
+<p><a href="https://docs.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview">Azure SQL Database</a></p>
+
+<p><a href="https://azure.microsoft.com/en-us/services/synapse-analytics/">Azure Synapse Analytics</a></p>
+
+<p><a href="https://azure.microsoft.com/en-us/services/databricks/">Azure Databricks</a></p>
+
+<p><a href="https://azure.microsoft.com/en-us/products/purview/">Microsoft Purview</a></p>
+
+<p><a href="https://azure.microsoft.com/en-us/services/machine-learning/">Azure Machine Learning</a></p>
+
+<p><a href="https://azure.microsoft.com/en-us/services/event-hubs/">Azure Event Hub</a></p>
+
+<p><a href="https://azure.microsoft.com/en-us/services/data-share/">Azure Data Share</a></p>
+
+<p><a href="https://github.com/microsoft/Unlocked-Cloud-Scale-Analytics/blob/main/presentations-pdf/03-a-microsoft-hybrid-approach-to-data-mesh-and-data-fabric.pdf">Unlocked: Cloud Scale Analytics slides</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=TE8gFOirLe0&amp;t=3080s">Unlocked: Cloud Scale Analytics video</a></p>
+
+<p><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/">Cloud-scale analytics - Microsoft Cloud Adoption Framework for Azure - Cloud Adoption Framework</a></p>
+
+<p><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh">What is a data mesh?</a></p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="learning &amp; growth" /><category term="organization &amp; sustainability" /><category term="strategy &amp; compete" /><category term="datamesh" /><category term="lakehouse" /><category term="strategy" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in May 2022]]></summary></entry><entry><title type="html">Data Architecture and Designing for Change in the Age of Digital Transformation</title><link href="/architecture%20&%20design/learning%20&%20growth/cdc/" rel="alternate" type="text/html" title="Data Architecture and Designing for Change in the Age of Digital Transformation" /><published>2021-08-09T18:22:30+00:00</published><updated>2021-08-09T18:22:30+00:00</updated><id>/architecture%20&amp;%20design/learning%20&amp;%20growth/cdc</id><content type="html" xml:base="/architecture%20&amp;%20design/learning%20&amp;%20growth/cdc/"><![CDATA[<p>Check out this past post from the Microsoft Data Architecture Blog in August 2021</p>
+
+<p><img src="/assets/images/postimages/DesigningForChange/DesigningForChange.png" alt="Designing for Change" /></p>
+
+<p>Change is constant whether you are designing a new product using the latest design thinking and human-centered product development, or carefully maintaining and managing changes to existing systems, applications, and services.  In this post I would like to provide both food for thought related to data architecture and change, as well as provide exposure to a practical analytics accelerator to capture change in data pipelines.   Along the way I also want to discuss a couple of terms often referenced in data management and analytics discussions: 1) One Version of the Truth, and 2) Data Swamp.  I have never liked either of these terms and will try to explain why realistically these are loaded, misleading, and rather biased terms.  Here is the Analytics Accelerator on <a href="https://github.com/commonacumen/Azure-DataFactory/tree/main/SamplesV2/ChangeDataCapture">Change Data Capture</a></p>
+
+<p><img src="/assets/images/postimages/DesigningForChange/bronzeSilverGold.png" alt="bsg" /></p>
+
+<h2 id="the-thinking-part">The Thinking Part</h2>
+
+<p>Before getting to the practical Analytics Accelerator for Change Data Capture, I want to discuss two terms that are thrown out more for competitive purposes as FUD (Fear, Uncertainty, Doubt) versus critical thought about what is realistic.</p>
+
+<p>Two areas of discussion in Data Management and Analytics:</p>
+
+<ul>
+  <li>
+    <p>One version of Truth – If the year 2020 and 20/20 hindsight have shown us anything it is that there is no such thing as one version of the truth.  I am not talking about the data being of high quality, easily discovered, and securely accessed and delivered.  Everyone aspires for that.  I am thinking more of bias and differing schools of thought that create differences even when the data is the same.  People derive and support different answers regardless.</p>
+  </li>
+  <li>
+    <p>Data Swamp – The world is swamped with and by data, especially when it is not curated, cleansed, and categorized.  What would the web be without search engines?  Data, whether on a local hard drive, or in cloud storage (Data Lake, Lakehouse, or Data Warehouse) is only a swamp if no one is working on it or using it.  I think the real problem is the under appreciation for the amount of technical debt required and labor needed to take data assets and produce data products.</p>
+  </li>
+</ul>
+
+<h2 id="one-version-of-the-truth">One version of the truth?</h2>
+
+<p>Is your truth left leaning of right leaning?  Not in the political sense, although parallels could be debated.  Let me explain by looking at some of the change management methodologies for maintaining existing systems, applications, and services.</p>
+
+<p>Source: https://enterprisersproject.com/article/2019/11/devops-vs-itil4-vs-SRE</p>
+
+<p>To realize a digital strategy, change management methodologies, frameworks, or best practices to navigate and sustain digital transformation are required.  The purpose of these practices is to provide change management and reduction of risk brought about by necessary changes to existing systems, applications, and services.  The goals are often improved communication, collaboration and building a connected culture that embraces change and promotes a growth mindset.  Some espoused outcomes may include: Transparency, Productivity, Accountability, Inclusion, Engagement, Involvement, and Sustainability.</p>
+
+<p>Three examples of these practices are DevOps, Site Reliability Engineering (SRE), and ITIL 4.</p>
+
+<ul>
+  <li>
+    <p>DevOps - integrates various teams and processes across the development and delivery of software.</p>
+  </li>
+  <li>
+    <p>SRE - development of systems and software that increases the reliability and performance of applications and services.</p>
+  </li>
+  <li>
+    <p>ITIL 4 - service quality and consistency with aim of improved stakeholder satisfaction.</p>
+  </li>
+</ul>
+
+<p>The diagram below depicts the 3 practices on a continuum from left to right.  I am not certain that SRE belongs in the middle, and assume it is closer to DevOps than it is to ITIL 4.  I only really put it between DevOps and ITIL 4 because it appears to utilize centralized specialized groups vs decentralized teams like DevOps.  Now I have listed some traits on the left and right sides of the continuum that may be more or less representative of the DevOps, SRE, and ITIL 4.  I could be showing my own bias on how I have categorized what goes on the left vs the right but I have experience with DevOps and ITIL so these descriptors have some life experience behind them.</p>
+
+<h3 id="change-management-processes-methodologies-frameworks-or-best-practices">Change Management Processes (methodologies, frameworks, or best practices)</h3>
+
+<p><img src="/assets/images/postimages/DesigningForChange/DevOpsSREITIL.png" alt="DevOpsSREITIL" /></p>
+
+<p>When I mentioned bias above, I meant that one person may lean towards the descriptors I have on the left towards DevOps or perhaps right towards ITIL 4.  Just like me this leaning could be based on experience or may be influenced by whether they are a manager or an individual contributor or a developer or non-developer.  If you think Design Thinking is any different check out these 16 design thinking methodologies.  Creative people have creative differences.</p>
+
+<h2 id="data-swamp">Data Swamp?</h2>
+
+<p>Now let’s take the same approach related to bias when referring to the term Data Swamp.  In the end someone has to do the work.  Change management and data management are kind of like parenting whether you get a dog or have a child you need to feed it, deal with the poop, and take it to the vet/doctor when it is sick.  You need to be both engaged and involved every second/minute/hour of the day.</p>
+
+<p>Not only that, creating and being responsible for a data product is subject to the same four economic factors of production: land, labor, capital, and entrepreneurship – as any product, service.</p>
+
+<p>Source: <a href="https://enterprisersproject.com/article/2019/11/devops-vs-itil4-vs-SRE">DevOps vs. ITIL 4 vs. SRE: Stop the arguments</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">Inputs:</code></p>
+
+<ul>
+  <li>
+    <p>Land - Nature Resources, Energy, Infrastructure (On Premises or Cloud compute and storage)</p>
+  </li>
+  <li>
+    <p>Labor – developers and work effort</p>
+  </li>
+  <li>
+    <p>Capital - capital is anything made that is used to make something else (tool, product, service)</p>
+  </li>
+  <li>
+    <p>Entrepreneurship – Know-how or ability to put the other three resources together to create business value.</p>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Outputs:</code></p>
+
+<p>Capital - capital is anything made that is used to make something else (tool, product, service)
+Business Value – has to have value to someone or you can’t stay in business</p>
+
+<p><code class="language-plaintext highlighter-rouge">Barriers to Change</code></p>
+
+<ul>
+  <li>Risk</li>
+  <li>Obstacles</li>
+  <li>Limitations</li>
+  <li>Aversion to change</li>
+  <li>Boiling the ocean vs use case based bottom-up projects.</li>
+</ul>
+
+<h3 id="people-labor-process-entrepreneurship-and-technology-land-andor-entrepreneurship-to-make-something-capital-from-data">People (Labor), Process (Entrepreneurship), and Technology (Land and/or Entrepreneurship) to make something (Capital) from data.</h3>
+
+<p><img src="/assets/images/postimages/DesigningForChange/PeopleProcessTechDataTriangle.png" alt="PeopleProcessTechDataTriangle" /></p>
+
+<p>Inputs -&gt; Outputs -&gt; Business Value is kind of like inputs and outputs in a data pipeline.</p>
+
+<p>IMO the issue here is not enough people (Data Engineers), needed improvement in process (pipelines), and decentralizing the process to many teams vs throwing it over the fence to a centralized team.  Every organization is going to need to Tom Sawyer (or pay for) more labor and provide technology for users to do their own ironing (data engineering).  A good outcome of engagement/involvement/ownership, if you prepare your own data and don’t delegate it to someone else who has less context about what you are trying to achieve, then the data should be of better quality etc. and more usage (active users).  Keys to success may be this increased involvement and engagement.   Involvement in workers doing something to the data as practicing data professionals (Data Engineers, Data Scientists, Data Analysts, Developers, Data Architects) and Business Users.  Engagement with the data community (Data Pros and Business Users) working together to digitally transform the business.  Engagement/Community implies doing with and Involvement/Practicing implies doing to.</p>
+
+<p>What about comparing left and right bias to say Data Mesh vs Data Vault.  One expands (changes from smaller to larger) and the other contracts (draws together).  I have to leave this for another day, but I would be interested in your opinion.</p>
+
+<h3 id="data-management-processes-methodologies-frameworks-or-best-practices">Data Management Processes (methodologies, frameworks, or best practices)</h3>
+
+<p>Let’s have a look at a Data Analytics Continuum with some of the competitors in the space.</p>
+
+<p><img src="/assets/images/postimages/DesigningForChange/DataAnalyticsContinuum.png" alt="DataAnalyticsContinuum" /></p>
+
+<p>Why is Big Data on the left and DW on the right?  Is one side more prone to bog down than the other?  For some of the same reasons/traits of the earlier diagram with DevOps  ITIL 4.  As you decide to move data from 3rd Normal Form OLTP datastores and streaming sources and compose the data in data lakes, lakehouses, one wide table, dimensional models, data vault, and/or MPP data warehouses think about your choices.  The left might have open formats vs proprietary ones on the right.  The table below is not an exhaustive list, but it is a point of comparison from left to right.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Open File Formats (Alphabetical)</th>
+      <th>Proprietary File Formats (Alphabetical)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>avro</td>
+      <td>db2</td>
+    </tr>
+    <tr>
+      <td>csv</td>
+      <td>dbf</td>
+    </tr>
+    <tr>
+      <td>delta</td>
+      <td>mdf</td>
+    </tr>
+    <tr>
+      <td>frm</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>json</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>pgdata (folder)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>xml</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The left side of the continuum might be more aligned with AI and Machine Learning use cases, and support both procedural (Java, Python, Scala) and declarative (SQL) coding versus just SQL.  Functional programming is probably supported on both sides but there are some things you can’t do with just SQL.  There might also be difference in innovation vs uniformity/continuity, and open community vs command and control related to left or right schools of thought.  Either way to be successful the people must stay both engaged and involved to remain current whether opensource, innersource (GitHub Community inside your organization), or proprietary.</p>
+
+<h2 id="so-here-starts-the-doing-part">So here starts the Doing Part</h2>
+
+<p>Speaking of Change and Data Management please checkout my Analytics Accelerator on Change Data Management <a href="https://github.com/Azure/Azure-DataFactory/tree/main/SamplesV2/ChangeDataCapture">https://github.com/Azure/Azure-DataFactory/tree/main/SamplesV2/ChangeDataCapture</a>.</p>
+
+<p>Note: This larger Analytic Accelerator <a href="https://github.com/DataSnowman/analytics-accelerator">https://github.com/DataSnowman/analytics-accelerator</a> 
+contains some one click Deploy to Azure and use cases to learn more about Azure Synapse Analytics, Azure Machine Learning, as well as Azure Databricks.  The CDC use case is the same in both GitHub repos.</p>
+
+<p><img src="/assets/images/postimages/DesigningForChange/CDC.png" alt="CDC" /></p>
+
+<p>Deploy <a href="https://github.com/Azure/Azure-DataFactory/tree/main/SamplesV2/ChangeDataCapture#deploy-azure-data-factory-azure-databricks-adls-and-azure-sql-database">here</a></p>
+
+<p>Steps <a href="https://github.com/Azure/Azure-DataFactory/blob/main/SamplesV2/ChangeDataCapture/usecases/cdc/steps/usecasesteps.md">here</a></p>
+
+<p>Code <a href="https://github.com/Azure/Azure-DataFactory/tree/main/SamplesV2/ChangeDataCapture/usecases/cdc/code">here</a></p>
+
+<p>The Analytics Accelerators use Azure Resource Management (ARM) template based click to Deploy to Azure.  The CDC use case deploys Azure SQL Database, Azure Data Factory, Azure Data Lake Storage, and Azure Databricks in less than 3 minutes.  Thanks to Simon Whiteley for the inspiration from his presentation at DATA &amp; AI Summit 2021 <a href="https://databricks.com/session_na21/accelerating-data-ingestion-with-databricks-autoloader">Accelerating Data Ingestion with Databricks Autoloader</a>.  I love Autoloader, Schema Evolution, Schema Inference.  I just wanted to add a control table driven batch copy for RDBMS tables to ADLS and then have Autoloader and upsert logic in an Azure Databrick notebook.  It is a work in progress just like anything worthwhile in life.  Hopefully this helps you follow along with Simon’s excellent video.</p>
+
+<p>Azure SQL Database -&gt; ADF -&gt; ADLS (bronze) -&gt; Databricks (silver)</p>
+
+<h2 id="coming-in-future">Coming in Future:</h2>
+
+<ul>
+  <li>Serverless select queries of Delta tables using Synapse Analytics external tables for Power BI dataset refreshes.</li>
+  <li>Streaming data source use case from streaming source (Event-based not like the RDBMS CDC example in item 3)</li>
+  <li>Take the Realtime analytics from SQL Server to Power BI with Debezium (Evandro Muchinski’s Post) use case and stream to Lakehouse instead</li>
+</ul>
+
+<p>Need some help from Databricks (once someone gives me access): Hoping to add Delta Live Tables for surrogate key and slowly changing dimension logic, and SQL Analytics to use in notebooks and with Power BI.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>With the 2020 Olympics just closing I am embracing the Olympic spirit:</p>
+
+<ul>
+  <li>The Olympic Medals using Databricks Medallion Architecture (bronze, silver, gold) in the CDC Analytics Accelerator</li>
+  <li>The Olympic motto “Citius, Altius, Fortius” or “Swifter, Higher, Stronger” as maxim for upskilling</li>
+  <li>The International Olympic Committee has recently amended its “Faster, Higher, Stronger” motto to include the word ‘Together’ for contributing to the community</li>
+</ul>
+
+<p>In the same way that change was required to the Olympic motto highlighting the need for togetherness and solidarity during difficult times such as the COVID-19 pandemic - Hope and Solidarity:  The motto now reads: “Faster, Higher, Stronger – Together”.</p>
+
+<p>I hope this post helps change/expand your opinion and perhaps spur you to practice, train, build skills, grow, and learn so you can perform to the best of your abilities.  Let’s do this together and fight against FUD.</p>
+
+<p>Now that the Olympics are over and as Summer is coming to an end “I look up as I walk”, “Remembering those Summer Days”.  Wish I could have attended the Olympics in Toyko.  I had a great visit while presenting for AI Days 3 years ago and would love to return.</p>
+
+<p>Here is a great song <a href="https://www.youtube.com/watch?v=C35DrtPlUbc">Ue o Muite Arukou</a> (older than me) to capture it all (Closing of 2020 Olympics in Japan, Closing of Post).</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="learning &amp; growth" /><category term="skilling" /><category term="changedatacapture" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in August 2021]]></summary></entry><entry><title type="html">Microsoft delivers best Analytics Data Pro Christmas gift since 1998</title><link href="/architecture%20&%20design/learning%20&%20growth/best-analytics/" rel="alternate" type="text/html" title="Microsoft delivers best Analytics Data Pro Christmas gift since 1998" /><published>2020-12-24T17:38:30+00:00</published><updated>2020-12-24T17:38:30+00:00</updated><id>/architecture%20&amp;%20design/learning%20&amp;%20growth/best-analytics</id><content type="html" xml:base="/architecture%20&amp;%20design/learning%20&amp;%20growth/best-analytics/"><![CDATA[<p>Check out this past post from the Microsoft Data Architecture Blog in December 2020</p>
+
+<p><img src="/assets/images/postimages/XmasGift/xmasgift.png" alt="Microsoft delivers best Analytics" /></p>
+
+<p>Every December, is a great time to reflect on the past, evaluate and present, and postulate about the future.  Like in Charles Dickens “A Christmas Carol” with Ghosts of Christmas Past, Present, and Future but perhaps less scary - although 2020 has been a frightening year with Covid-19.  While the past and present related to Covid-19 includes staying home, wearing masks, social distancing, and frequent hand washing - hopefully the future is improving with more vaccines in market and the turn of another New Year.</p>
+
+<p>In the world of Data Architecture and Analytics, the future looks very bright for Data Pros.  If you did not catch the Azure Synapse Analytics GA announcement earlier this month on Dec 3rd, 2020 please check out the digital event <a href="https://azuredataandanalytics2020.eventcore.com/">Shape Your Future with Azure Data and Analytics</a>.  The title chosen for the event was pretty significant in my opinion, because  Azure Synapse Analytics (and Azure Purview – will leave for a future post) will definitely shape the careers of Data professionals interested in Analytics for the next decade and beyond.  The basis of my prediction is supported mainly from past experience (27 years in the Data &amp; AI space).  For me, the way Azure Synapse Analytics parallels the release of SQL Server 7.0 back in 1998 (known for its exemplary combination of BI and Data Warehousing capabilities) is a foretelling factor.  But for context let’s first visit the Analytics past, present, and future.</p>
+
+<h2 id="past">Past:</h2>
+
+<p>Back in 1998, I was taking significant steps to create a healthcare claims and eligibility data mart for University of Washington Physicians.  Thanks to my manager at the time I was able to invest in SQL Server 7.0 for the data mart, Sagent for ETL, and Brio for reporting.  SQL Server was the data management platform that enabled me to be successful in my job and provided our team of data analysts with consolidated datasets that accelerated the decisions made affecting the managed care lives entrusted to UW Physicians.  SQL Server was the target for raw (load - bronze) claims and eligibility data from several health plans; the location (stage - silver) where Clinic and Physician identifiers could be consolidated; and the source (publish - gold) datasets for query and analysis by data analysts.</p>
+
+<p>I had started a Decision Support and Data Warehousing career 5 years prior using IBM DB2, and IBM Metaphor.  Unfortunately, those tools were expensive, niche, and narrowly adopted - I was not even sure that the Decision Support and Data Warehousing industry would take off and be a good career.  But SQL Server 7.0 started to make these tools mainstream and with the release of SQL Server 2000 and SQL Server 2005 the packaging of a relational database, an OLAP engine, and an ETL engine into a single offering helped make any Data Pro career in BI and Data Warehousing a reality over a 7 year span.  By the time I joined Microsoft in 2005, SQL Server had changed the BI and Data warehousing space forever with Integration Services, the Relational Database engine, Analysis Services, Data Mining, and Reporting Services.  In the 15 years since 2005, Microsoft has continued to leverage this pedigree in BI and Data Warehousing as the unit market leader in the BI and Data Warehousing space, while at the same time expanding its portfolio in both Big Data, and AI and Machine Learning.</p>
+
+<p>So, in the era of client server computing SQL Server running in company data centers (or on a server next to my desk at UW Physicians) in my option drove the BI and Data Warehousing market forward.  It did this by providing tools and infrastructure (mentioned above) that the data professionals of the day (ETL Developer, OLAP Developer, DBA, and Report Developer) could build solutions with.</p>
+
+<h2 id="present">Present:</h2>
+
+<p>What does Microsoft have available today to help Data Engineers, Data Scientists, Data Analysts, and Data Officers (Data Owner, Data Stewards, Chief Data Officers)?  Do customers need these tools and are they prepared to employ these Data Pro roles?</p>
+
+<p><img src="/assets/images/postimages/XmasGift/DataSnowmanModern.JPG" alt="datasnowman" /></p>
+
+<p>Here are my GitHub at <a href="https://github.com/DataSnowman">https://github.com/DataSnowman</a> where I focus on projects that focus on Data &amp; Analytics.</p>
+
+<p>Microsoft’s combination of industry leading Power BI and its complete offering of Cloud Analytics services on Azure has created an environment where the sky is the limit for any customer creating Analytics solutions in any industry.  Analytics has been changing broadly during the last 10 years with Big Data (Hadoop, Spark) and AI and Machine Learning bringing new skills and growth opportunities for Data Pro roles like Data Scientists, and Data Engineers.  The market for Data Pro roles seams very strong.  For example, in the recent <a href="https://www.kdnuggets.com/2020/12/introduction-data-engineering.html">KD nuggets post Introduction to Data Engineering</a> Xinran Waibel points out the recently published <a href="https://techhub.dice.com/Dice-2020-Tech-Job-Report.html">Dice 2020 Tech Job Report</a>, which reports that data engineer was the fastest-growing tech occupation in 2019, with a 50% year-over-year growth in the number of open job positions.  The report showed Data Scientist as the 3rd fastest-growing tech occupation.</p>
+
+<p>Azure Synapse Analytics is poised to do the same with the Cloud Data and Analytics market as SQL Server did for the on-premises BI and Data Warehousing market between 1998 and 2008.  Only I think it is going to happen way faster because of Azure.  What has Azure Synapse Analytics done to make it compelling for organizations to migrate existing Data Warehouses, or build new Big Data and Data Warehouses solutions on Azure?  Synapse unifies Data Integration, Big Data, and Data Warehousing.</p>
+
+<p><img src="/assets/images/postimages/XmasGift/BusinessChangingInsightsEngine.jpg" alt="bizchanging" /></p>
+
+<p>Synapse also integrates with Power BI, Azure Machine Learning, and Azure Data Share.For me the unification of Data Integration (Azure Data Factory), SQL, and Spark is what makes Synapse special.  Data Engineers can use Data Integration data flows which use Spark job clusters for transformation at scale, and/or Spark Notebook activities can be used as part of data integration pipelines, and pipelines can sink to Azure Data Lake Storage (ADLS) or persistent dedicated SQL Pools.</p>
+
+<p><img src="/assets/images/postimages/XmasGift/synapseL100.jpg" alt="synapsel100" /></p>
+
+<p>External tables can be created on files in ADLS and queried with Transact-SQL using serverless on-demand queries.  Queries can be run against dedicated SQL Pools.  Spark Notebooks can access files (Json, Parquet, CSV) on ADLS storage using PySpark, Scala, Spark SQL, Java, and .Net</p>
+
+<p><img src="/assets/images/postimages/XmasGift/synapseL300.jpg" alt="synapsel300" /></p>
+
+<p>How can you use Azure Synapse Analytics to develop your skills as a Data professional?  Start using it and practice, practice, practice!  Rebecca Sealfon recently mentioned the important of practicing in the towards data science article <a href="https://towardsdatascience.com/learning-data-science-online-without-an-instructor-tips-and-tricks-5e15fb886333">Learning Data Science Online Without an Instructor: Tips and Tricks</a> “Without intensively practicing, there is no way to gain the experience to become a professional.”  This article was focused on learning Data Science, but all Analytics Data Pro roles need to practice.  Each of these roles tend to do similar categories of work related to capture, curation, and consumption of data throughout the data lifecycle.  The relationships between roles can range from complementary/interdependent to competitive/independent.  For me the Synapse Analytics Studio offers potential for cooperation to win the day, but Azure provides plenty of flexibility that is palatable to any organizational structure (Department, Organization, Enterprise).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Pro Role</th>
+      <th>Capture</th>
+      <th>Curate</th>
+      <th>Consume</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Engineers</td>
+      <td>Source/Extract</td>
+      <td>Pipelines/Data flows / Transform (Bronze, Silver, Gold)</td>
+      <td>Sink / Load / Query ADLS and Database</td>
+    </tr>
+    <tr>
+      <td>Data Scientists</td>
+      <td>Datasets</td>
+      <td>Wrangle/Experiment/Build and Test AI &amp; ML Models</td>
+      <td>Predict/Score/Inference</td>
+    </tr>
+    <tr>
+      <td>Data Analysts</td>
+      <td>Query</td>
+      <td>Load/Transform/Data Model</td>
+      <td>Analyze/Visualize</td>
+    </tr>
+    <tr>
+      <td>Data Officers</td>
+      <td>Map</td>
+      <td>Catalog</td>
+      <td>Access (Compliance)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/assets/images/postimages/XmasGift/AnalyticsAI-ML-BI.jpg" alt="aimlbi" /></p>
+
+<p><strong>Note:</strong> You can utilize the 3C’s taxonomy above to look at the offerings and marketectures of other vendors in the space like Snowflakes Compile, View, Analyze and Share data or Databricks Data Lake / Delta Lake: Ingest (bronze), Refine (silver), Feature/Aggregate (gold) data.  The Bronze, Silver, and Gold labels of today were the pasts Load, Stage, and Publish.  It just used to be different network storage landing zones, combined with tables, schemas, and databases.  Now you can still do the same as the past with cloud storage and databases or embrace a modern architecture that leverages ADLS storage and Spark to create Data Lake or Delta Lake solutions.  Synapse embraces Data Lake, Delta Lake, and Data Warehouse.  I love curated data lakes and serverless OnDemand SQL with Synapse.  I developed my affection based on work I have been doing supporting the Stanford CATCH Study <a href="https://catchstudy.stanford.edu/">https://catchstudy.stanford.edu/</a> .  Working with the team at Stanford has been my opportunity to practice, and you really do need a project to ignite your potential and show what Synapse and some talented customers can accomplish.</p>
+
+<p><strong>Future:</strong></p>
+
+<p>When 2021 starts in a week, Synapse is going to be my jam!  Azure Synapse Analytics, with Power BI, and Azure Machine Learning along with your Data Pro talents will accomplish amazing things in 2021.  Just start practicing to ignite your potential.</p>
+
+<p>Stay safe!
+Happy Holidays
+Best Wishes in 2021</p>
+
+<p>Checkout this Spotify playlist <a href="https://open.spotify.com/playlist/7wzQG4q57NQQ5EPrkQsp8M?si=EuQLyBZ_TxSiZBKxCCOy5g">DataSnowmanChristmas2020Top100</a></p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="learning &amp; growth" /><category term="skilling" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in December 2020]]></summary></entry><entry><title type="html">Data and Analytics Solutions require this to successfully solve business problems!</title><link href="/architecture%20&%20design/das/" rel="alternate" type="text/html" title="Data and Analytics Solutions require this to successfully solve business problems!" /><published>2020-08-21T17:04:30+00:00</published><updated>2020-08-21T17:04:30+00:00</updated><id>/architecture%20&amp;%20design/das</id><content type="html" xml:base="/architecture%20&amp;%20design/das/"><![CDATA[<p>Check out this past post from the Microsoft Data Architecture Blog in August 2020</p>
+
+<p><img src="/assets/images/postimages/BizProblems/bizproblems.png" alt="bizproblems" /></p>
+
+<p>Thanks for being part of this Data Architecture Blog and Community.  In this post I want to discuss the importance of building a Data Community in your organization and how Azure Data Services can help nurture that Data Community and drive solution adoption and success.</p>
+
+<p>How do you convince someone in an organization to be engaged in a Data Community and contribute to the many assets required to meet an organizations vision for Data and Analytics Solutions?   I love the term Tom Sawyering.  Not the deceitful part of getting someone to do my work (I believe in doing my own ironing, painting, data wrangling, upskilling, etc.), but the recognition that to be able to paint a fence at scale you need more than one painter.  I know this firsthand, as I have been recruiting my wife to help paint our house this summer.</p>
+
+<p>Wikipedia definition of Tom Sawyering someone <a href="https://en.wiktionary.org/wiki/Tom_Sawyer">https://en.wiktionary.org/wiki/Tom_Sawyer</a></p>
+
+<p>“To convince <strong>someone</strong> to volunteer, especially to do something which one should do oneself.”</p>
+
+<p>To compound this scaling issue, organizations have many projects and initiatives so there is more than one fence to paint.  To get the job done you are going to need resources from outside your immediate team or department.  So how do you attract people to author content for Data and Analytics Solutions?  More importantly how do you foster contributors that don’t end up disillusioned and feeling like they have been Tom Sawyered.  Azure Data Services can help with faster time to value, and the innovation and agility focus of these solutions is going to attract a Data Community.  How do you upskill the Data Community?  The <a href="https://news.microsoft.com/skills/">Microsoft global skilling initiative</a> can help with that.  Members of the Data Community also need good business problems to solve to provide the necessary focus and opportunity to build proficiency and upskill to meet the challenge.  In this time of Covid-19, necessity truly is the mother of invention so you need to be innovative in your approach in building your Data Community - upskill the organization with both students entering the workforce, and by reskilling the existing workforce.</p>
+
+<p>To get started whether a green field initiative (not super common), or by more commonly extending, expanding, or modernizing an existing Data and Analytics Solution you need resources - people (labor), and infrastructure (buildings, electricity, tools, hardware, and software, or cloud platforms like Azure).  To be successful with people resources for a solution you need to have customers/users who are both authors and consumers of data and content.  To be successful with infrastructure resources you need technology, tools, hardware, and software that are flexible, agile, and elastic because of business volatility and changing demand.  Azure can help achieve this economic benefit by providing elastic infrastructure and reducing sunk costs in building, power, and servers.  Azure can also help achieve a financial benefit by improving cash flows and creating a variable vs fixed cost structure.  In my opinion the most important is the agility benefit that comes with IT and Business Transformation and faster time to value.  This innovation approach vs the cost savings provided by the economic and financial benefit is what brings the extended resources to the Data and Analytics Solution.  This business opportunity and innovation is what attracts people to the solution, but the cost saving can also be opportunities to reinvested to help with resourcing more people for required roles for the solution.</p>
+
+<p>If you are moving an existing data solution from on premises to Azure this cost saving may be delayed as you pay to keep the production on premises solution going until you compete migration.  So, for a time you pay to keep the as-is data solution running while you build the new to-be Data and Analytics Solution – kind of like a double mortgage.  The size of and adoption by the Data Community is going to be a big part of the justification for continued investment in the solution so you best get them onboard early – early involvement also builds ongoing commitment and ownership.  The following diagram depicts how <strong>Azure Data Services</strong> can extend an organizations infrastructure, and how the <strong>Data Community</strong> can extend the workforce required for creation, ongoing maintenance, and growth of <strong>Data and Analytics Solutions</strong>.</p>
+
+<p><img src="/assets/images/postimages/BizProblems/extendDataSolutionResources.PNG" alt="daSolutions" /></p>
+
+<p>How does Azure make this possible?  This diagram illustrates how the cloud vendor manages more of the infrastructure and how that can provide a faster time to value, standardization, and lower cost.</p>
+
+<p><img src="/assets/images/postimages/BizProblems/cloudplatformstack.png" alt="cloudplat" /></p>
+
+<p><strong>Demystifying Service Offerings from Microsoft Azure, Amazon AWS, and Google Cloud Platform</strong>
+by <a href="https://www.linkedin.com/in/charliecrocker/">Charlie Crocker</a></p>
+
+<p><a href="https://www.kdnuggets.com/2019/06/understanding-cloud-data-services.html">https://www.kdnuggets.com/2019/06/understanding-cloud-data-services.html</a></p>
+
+<p>Instead of just lift and shifting on premise data solutions to IaaS, bridging more workloads to PaaS Data Services on Azure and SaaS BI Services like Power BI can also come with people resource savings and enable existing resources to focus on activities higher up the stack.</p>
+
+<p><img src="/assets/images/postimages/BizProblems/cloudRolesRequired.png" alt="cloudroles" /></p>
+
+<p><strong>Demystifying Service Offerings from Microsoft Azure, Amazon AWS, and Google Cloud Platform</strong></p>
+
+<p>by <a href="https://www.linkedin.com/in/charliecrocker/">Charlie Crocker</a></p>
+
+<p><a href="https://www.kdnuggets.com/2019/06/understanding-cloud-data-services.html">https://www.kdnuggets.com/2019/06/understanding-cloud-data-services.html</a></p>
+
+<p>While Azure Data Services provide infrastructure benefits Power BI provides self-service capabilities that can help anyone in the organization be more engaged with data.  Users can easily collaborate with others to Tom Sawyer some additional volunteers and build a data-driven culture and Data Community.  Azure and Power BI also provide differentiated capabilities for users in the Data Community who have a diversity of needs.  Examples by <strong>User Role:</strong></p>
+
+<p><strong>Data Analyst</strong> – Power BI, Notebooks (Jupyter in Azure ML, Databricks, Synapse Analytics)</p>
+
+<p><strong>Data Scientist</strong> – Notebooks (Jupyter in Azure ML, Databricks, Synapse Analytics) and ML models deployed to the Kubernetes service AKS</p>
+
+<p><strong>Data Engineer</strong> – Azure Data Factory, Databrick Notebooks, Synapse Notebooks</p>
+
+<p>DBA – Azure SQL Database, PostgreSQL, MySQL, Synapse as well as Database Management tools like SQL Server Management Studio (SSMS) and Azure Data Studio.</p>
+
+<p><strong>Developer/Software Engineers</strong> – Relational Databases like those mentioned for DBA role, NoSQL Databases like CosmosDB as well as Integrated Development Environments and Code Editors</p>
+
+<p>Just like painters of trim, main walls, lower story, second story, and chimney (35 ft up) on a house are going to need tools like different sized paint brushes and ladders, paint, buckets.  A Data Community needs different tools.</p>
+
+<p><strong>Data and Analytics Solutions require a Data Community and Azure Data Services to successfully solve business problems!</strong>  Put hands on keyboard and do the work.  <strong>Do the work and learn the Skills.</strong>  Just like Mr. Miyagi in Karate Kid used <strong>Paint the Fence</strong> to upskill Daniel <a href="https://www.youtube.com/watch?v=R37pbIySnjg">https://www.youtube.com/watch?v=R37pbIySnjg</a></p>
+
+<p>Enjoy the rest of your summer!</p>
+
+<p>Darwin</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="solutions" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in August 2020]]></summary></entry><entry><title type="html">Solutions enable Human Experiences that Affect Lives</title><link href="/architecture%20&%20design/solutions-affect-lives/" rel="alternate" type="text/html" title="Solutions enable Human Experiences that Affect Lives" /><published>2020-07-29T01:34:20+00:00</published><updated>2020-07-29T01:34:20+00:00</updated><id>/architecture%20&amp;%20design/solutions-affect-lives</id><content type="html" xml:base="/architecture%20&amp;%20design/solutions-affect-lives/"><![CDATA[<p>Check out this past post from the Microsoft Data Architecture Blog in July 2020</p>
+
+<p><img src="/assets/images/postimages/Solutions/solutions.png" alt="SolutionsAffectLives" /></p>
+
+<p>Our experience shows that cloud technology, and the architecture used to create solutions can have a substantial impact on human lives.  Positive human experiences can encourage broader adoption of products, services, or ideas, and from a change management perspective can help individuals, teams, and organizations achieve lasting change.  To positively affect lives, solution architects, sponsors, and stakeholders need to do their part by help transform the experiences of those interacting/transacting with their organization by designing adaptable, end-to-end data and analytics solutions.  Architectures that have shown good results for our clients are based on these <a href="https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/">architectural styles</a> (big data, event-driven, microservices).</p>
+
+<p>Let’s start by looking at some of the architectural components and layers of an enterprise architecture.</p>
+
+<p>Architectural Components
+The major architectural components of any system are the software and the hardware.  All software systems can be divided into four basic functions. These four functions (data storage, data access logic, application logic, and presentation logic) are the basic building blocks of any information system.  The three primary hardware components of a system are client computers, servers, and the network that connects them.
+<a href="https://learning.oreilly.com/library/view/system-analysis-and/9781118057629/">System Analysis and Design, Fifth Edition</a> by Roberta M. Roth; Barbara Haley Wixom; Alan Dennis Published by Wiley, 2012</p>
+
+<p>When the storage, compute, network, database, web app, analytics, and AI and Machine Learning components are on the Azure data and analytics platform great things are possible.  Here are some Enterprise Architecture diagrams that focus on the layers that make up a solution architecture.</p>
+
+<h2 id="enterprise-architecture-ea-layers">Enterprise Architecture (EA) Layers</h2>
+
+<p><img src="/assets/images/postimages/Solutions/BIAT.jpg" alt="biat" /></p>
+
+<p>Conventional BIAT Diagram and the 5-Layer BIAT Diagram <a href="http://eitbokwiki.org/Enterprise_Architecture">http://eitbokwiki.org/Enterprise_Architecture</a></p>
+
+<p>This post uses the term <strong>data</strong> vs <strong>information</strong> because in the world of Data &amp; AI the industry terms are more data centric: Big Data, Data Engineer, Data Science, Data Analyst, Data Warehouse, Data Mart, Data Model, Datastore, Database, Data Visualization, Data Wrangling, Data Mining, Data Lake, DataFrame, Change Data Capture, and Master Data.  This is a lot of information, but it is all data!  Combining the two references above you might end up with a diagram that looks like this:</p>
+
+<p><img src="/assets/images/postimages/Solutions/ealayers.png" alt="ealayers" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Darwin’s munging (in a data wrangling kind of way) of EA layers and Architectural Components</code></p>
+
+<h2 id="real-life-scenario">Real-life scenario</h2>
+
+<p>For a real-life scenario to test some of this out, let’s use moving stuff (furniture, boxes, lamps, rugs, chairs tables) from one place to another (warehouse, house, apartment, office).  To do this most people either hire a moving company, or if you like to be hands-on, do-it-yourself and rent a trailer or truck.  Renting moving equipment is a very complex logistics business process.  The moving equipment rental business process has many actors (users of the system) that are human users, and there is little control over the human users involved in the system (customer might not take the truck or trailer back in time, extend their rental, or return equipment to a location that has no demand for the being rented the next day); thus the need to check for human errors, contain bias, expedite last minute changes, and have the privileges setup to reduce any harm to the parties involved.  It is real life, tough to automate, and kind of out of control.  Such a process to far less controlled than fulfilling an online order from a online retailers warehouse to your house.  Throw in Covid-19, with requirements to clean equipment, wear masks, and social distance and you have potential for some chaos!  For example, no more paper rental agreement which probably changes the process.</p>
+
+<h2 id="recommended-solution-architecture-to-approach-and-organize-the-chaos">Recommended solution architecture to approach and organize the chaos</h2>
+
+<p>What are some of the things to consider when building a data and analytics solution that works for the real-life scenario described?  Using a Cloud-based Data, AI/ML, Modern Data Management, and Modern Application focused approach the design of an End-to-End (E2E) solution might use and combine these capabilities:</p>
+
+<ul>
+  <li>
+    <p><strong>OLTP</strong> (Online Transactional Processing) to create, read, update, and delete (CRUD stuff) the transactions in an operational RDBMS (Relational Database Management System) like <a href="https://azure.microsoft.com/en-us/services/sql-database/">Azure SQL Database</a></p>
+  </li>
+  <li>
+    <p><strong>NoSQL</strong> database like <a href="https://azure.microsoft.com/en-us/services/cosmos-db/">Azure Cosmos DB</a> as the cloud-native operational database to store the data that is better stored in document databases (rental contract, attributes and preferences of the customers and dealers, and profiles of the rental equipment)</p>
+  </li>
+  <li>
+    <p><a href="https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven"><strong>Event-driven</strong></a> architecture to capture all the interactions between the human to human and device actors (emails, texts, social media tweets and Instagram posts, near real-time IoT telemetry data streaming from the fleet of trucks and trailers).  Capture events using <a href="https://docs.microsoft.com/en-us/azure/event-hubs/">Azure Event Hub</a>, <a href="https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub">Azure IoT Hub</a>, <a href="https://kafka.apache.org/">Apache Kafka</a> and perform complex event processing using <a href="https://azure.microsoft.com/en-us/services/stream-analytics/">Azure Stream Analytics</a>.  Much of this human created data comes from the endless mobile devices that the customers (drivers) use during the lifecycle from reservation - to pick up location - to return location.  This also can include SOA/ESB driven application integration via APIs and messaging.  This information could be landed in storage, in relational or NoSQL databases, or use <a href="https://azure.microsoft.com/en-us/services/data-explorer/">Azure Data Explorer</a> - a fast, fully managed data analytics service for real-time analysis on large volumes of data streaming from applications, websites, IoT devices, and more.</p>
+  </li>
+  <li>
+    <p><a href="https://azure.microsoft.com/en-us/services/storage/data-lake-storage/"><strong>Data Lake storage</strong></a> and Big Data analytical processing like <a href="https://docs.microsoft.com/en-us/azure/databricks/scenarios/what-is-azure-databricks">Azure Databricks</a> (Spark) and data integration tools like <a href="https://docs.microsoft.com/en-us/azure/data-factory/">Azure Data Factory</a> for combining data from the OLTP and operational systems as well as near real-time data streaming from fleet IoT device telemetry in trucks and trailers, from emails, from texts, from chats with chatbots, or from tweets.  Change Data Capture, transactional replication and other data movement technologies need consideration here as well.</p>
+  </li>
+  <li>
+    <p><strong>Analytical data stores</strong> to create modern data warehouses like <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/">Azure Synapse Analytics</a>.  In fact Azure Synapse Analytics combines all of the capabilities in the first 4 items above and can be used to create HTAP (hybrid transactional and analytical processing) systems using offerings like <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link-use-cases">Azure Synapse Link for Azure Cosmos DB</a>.</p>
+  </li>
+  <li>
+    <p><strong>Business Intelligence</strong> analysis and data visualizations using <a href="https://powerbi.microsoft.com/en-us/">Power BI</a>.  It is amazing what can be done with Cloud-based BI.  The connectivity, capabilities, scalability, security, performance, and affordability make getting started easy.</p>
+  </li>
+  <li>
+    <p><strong>AI and Machine Learning</strong> like Azure <a href="https://azure.microsoft.com/en-us/services/cognitive-services/">Cognitive Services</a> to process images like the pictures on drivers’ licenses, automating forms, predicting customer sentiment in texts, as well as tools like <a href="https://azure.microsoft.com/en-us/services/machine-learning/#product-overview">Azure Machine Learning</a> for data scientists to build and deploy models to suggest next best offers to customers that have similar profiles, or to predict the need for additional insurance coverage or fraudulent activities.  Maybe even predict who is having a bad experience and needs a call of support.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://azure.microsoft.com/en-us/overview/cloudnative/">Cloud Native Applications</a></strong> using microservices, serverless, and containers like Docker and container orchestration services like Kubernetes —optimized for cloud scale and performance.  Apps built using programming languages like JavaScript and TypeScript, frameworks like React and Angular, and runtime environments like Node.js.  With AI and machine learning built in.</p>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Note: You will have some of the capabilities and technologies already in place, so this is an integration-based solution that often extends what you already have.  You will want to migrate some of the applications and data sources to Azure, but the data and analytics components (stuff in land, stage, warehouse, information delivery, BI, AI and ML, and applications) are definitely best up on Azure.</code></p>
+
+<p><img src="/assets/images/postimages/Solutions/e2edataaisolution.png" alt="e2e" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Darwin’s end-to-end cloud solution architecture diagram</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">The diagram above currently excludes Master Data Management (MDM), Data Governance, Data Catalogs, and probably missed something. This post is already broad and complex.  This complexity brings all these currently excluded capabilities to a greater level of importance but let’s leave that for another day.</code></p>
+
+<p>Some of the inspiration for this post comes from the Data Vault methodology.  Solutions I have created during the last 25 years used Land, Stage, and Publish tables and schema along with association tables to associate source system keys with surrogate keys.  Information delivery was through star schema accessed by BI tools like Power BI.  I considered my approach as Kimball-based but in many ways it was actually pretty aligned with the Data Vault methodology, which IMO is a nice blend of the Ralph Kimball and the Bill Inmon approaches to data warehousing.  Below is a diagram of the Data Vault architecture.</p>
+
+<p><img src="/assets/images/postimages/Solutions/datavault.jpg" alt="datavault" /></p>
+
+<p><a href="https://www.amazon.com/Building-Scalable-Data-Warehouse-Vault-ebook-dp-B015KKYFGO/dp/B015KKYFGO/ref=mt_other?_encoding=UTF8&amp;me=&amp;qid=">Building a Scalable Data Warehouse with Data Vault 2.0</a> by Dan Linstedt and Michael Olschimke</p>
+
+<p>I also found this illustration helpful from the eBook <a href="https://www.qlik.com/us/resource-library/data-warehouse-automation-in-azure-for-dummies">Data Warehouse Automation in Azure for Dummies</a> by Matthew Basile, Clive Bearman, Rajeev Jain, and Kevin Pardue</p>
+
+<p><img src="/assets/images/postimages/Solutions/agiledatapipeline.png" alt="agiledata" /></p>
+
+<p>So, to wrap up and test my real-life scenario, would this architecture improve the experience of someone renting moving equipment? In my opinion as both a solution architect and a consumer, a definitive yes! There are systems, people, and processes in place, but there are things to consider extending to improve the human experience. For example, if the people and processes change the pickup and drop off locations with the customer at too great a frequency; something has to report, predict the negative experience, and then the system, people, and processes have to adopt to prevent the occurrence of such negative experiences. It is the interactions that happen around the transactions that often determine the experience.</p>
+
+<p>There is no immutable master plan for this type of architecture, and you need to get started to realize any of it. You have probably already started, but is something missing that this post helped surface? Start small with a business problem and combine some operational structured data sources and some streaming data sources needed to solve the problem; create some reports in Power BI, and build and deploy ML models to embed into a Power Apps or custom Apps so users can use them. Use Agile and DevOps and iterate on the solution, and then use what you learned and do more projects. Hopefully this post has provided some insights, but it is a journey that requires a growth mindset for the entire organization at the individual, team, and corporate level. Whether you categorize yourself as a consumer, architect, developer, designer, engineer, employee, student, teacher, line of business manager, administrator, or executive; hopefully you are inspired to take that next step in your journey. If you have an idea you would like to discuss, please call, email, or comment. Would love to help turn your vision into reality and help you embrace and harness the chaos in your organization.</p>
+
+<p>Hope you enjoy your summer whether relaxing or productive (does not need to be house painting, could be camping or time at the lake house)!</p>
+
+<p>Stay Safe,</p>
+
+<p>Darwin</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="solutions" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in July 2020]]></summary></entry><entry><title type="html">Data Skills Transitions are like Sunsets and Sunrises</title><link href="/learning%20&%20growth/sunrise/" rel="alternate" type="text/html" title="Data Skills Transitions are like Sunsets and Sunrises" /><published>2020-01-30T13:33:30+00:00</published><updated>2020-01-30T13:33:30+00:00</updated><id>/learning%20&amp;%20growth/sunrise</id><content type="html" xml:base="/learning%20&amp;%20growth/sunrise/"><![CDATA[<p>This is a new update to test
+Check out this past post from the Microsoft Data Architecture Blog in January 2020</p>
+
+<p><img src="/assets/images/postimages/sunrises.png" alt="sunrises" /></p>
+
+<p>I was inspired by Buck Woody’s post on Monday but it was not until I was walking the dog (Hudson) this morning that I got the hook I was looking for.  My Mom always said, when it came to sunrises and sunsets “Orange sky in morning sailors take warning; Orange sky at night sailors delight”.</p>
+
+<p><img src="/assets/images/postimages/sunrise.jpg" alt="sunrisepic" /></p>
+
+<p>We can argue over the color of this sunrise (it is winter in Seattle so any sun is good), but when it comes to Data Skills transitions as Data professionals (Data Architects, DBAs, Data Engineers, Data Scientists) we need to heed the warnings.  Cloud Data, AI and BI offerings like Azure Synapse Analytics, Azure Machine Learning, Azure Data Factory, Azure Databricks, Azure Data Lake Storage, and Power BI have changed the game.</p>
+
+<p>I started my data warehousing and decision support career back in 1993 and have seen many a product sunset: <a href="https://en.wikipedia.org/wiki/Metaphor_Computer_Systems">Metaphor Computer Systems</a>, Sagent (great ETL tool the is somewhere in <a href="https://www.pitneybowes.com/us">Pitney Bowes</a> data integration), and <a href="https://en.wikipedia.org/wiki/Brio_Technology">Brio Technology</a></p>
+
+<p>I moved to Seattle 23 years ago and used SQL Server 6.5, Sagent, and Brio to enable data analysts at University of Washington Physicians.  I quickly migrated my data mart to SQL Server 7 in 1998.  SQL Server had a major impact on the BI/DW industry (OLAP services changed the market) and on my career.  It was important for my career when I joined Business Objects as an OLAP champion back in 2000 and at WaMu where a team I managed deployed SQL Server and Bobj like crazy.  I joined Microsoft in 2005 just before SQL Server 2005 launched.  In 2005 I also attended my first TechReady (Microsoft Tech internal event) at the Washington State Convention Center.  It was an awesome readiness event all the way to TechReady 24 (that is 12 years because these happen twice a year).  We are at the sunrise of Winter Ready in Seattle this Monday Feb 3rd.  I can’t wait to learn about and skillup because I can see the new data skills needed on the horizon.</p>
+
+<p>So why this history lesson?  If you are seasoned like me and nearing the sunset of your career, I implore you to batten down the hatches and get ready for the storm by upskilling.  Businesses need your energy and experience.  Many of you are well on your way.  Don’t let all the newbies get all the opportunities for the new projects that are out there, the the new generation of Data Pros need us.  For people early in your data careers IMO you have an awesome future.  I think SQL Server 2019 Big Data Clusters and the things it “Spawned” like <a href="https://azure.microsoft.com/en-us/services/azure-arc/">Azure Arc</a> and <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/">Azure Synapse Analytics</a> will provide you with decades of learning, challenges, and employment.</p>
+
+<p>I have had a love/hate relationship with certifications but would recommend <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer">Microsoft Certified: Azure Data Engineer Associate</a>.</p>
+
+<p>IMO, it will make us all better and the more people that take it the better the certification will be.</p>
+
+<p>But get your hours in using the Azure Portal and Power BI Portal. Lets be Ready and Certified.</p>
+
+<p>May there be many sunrises and sunsets in your work and personal lives.</p>
+
+<p>Thanks for joining the Data Architecture Community!</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Darwin Schweitzer</td>
+      <td>Cloud Solution Architect</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:darsch@microsoft.com">darsch@microsoft.com</a></td>
+      <td>GitHub <a href="https://github.com/DataSnowman">DataSnowman</a></td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>CommonAcumen</name></author><category term="learning &amp; growth" /><category term="skilling" /><summary type="html"><![CDATA[This is a new update to test Check out this past post from the Microsoft Data Architecture Blog in January 2020]]></summary></entry></feed>
