@@ -637,7 +637,7 @@
     var typingEl = addTyping();
 
     try {
-      var response = await fetch(API_URL + "/api/chat", {
+      var response = await fetch(API_URL + "/api/chat/json", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "omit",
@@ -651,8 +651,11 @@
         return;
       }
 
+      var data = await response.json();
+
       var contentEl = document.createElement("div");
       contentEl.className = "sitebot-msg-content";
+      contentEl.textContent = data.answer || "";
       var sourcesBox = document.createElement("div");
       var wrapper = document.createElement("div");
       wrapper.className = "sitebot-msg bot";
@@ -660,29 +663,10 @@
       wrapper.appendChild(sourcesBox);
       msgs.appendChild(wrapper);
 
-      var reader = response.body.getReader();
-      var decoder = new TextDecoder();
-      var buffer = "";
-
-      while (true) {
-        var result = await reader.read();
-        if (result.done) break;
-        buffer += decoder.decode(result.value, { stream: true });
-        var lines = buffer.split("\n");
-        buffer = lines.pop();
-
-        for (var i = 0; i < lines.length; i++) {
-          if (!lines[i].startsWith("data: ")) continue;
-          var data = JSON.parse(lines[i].slice(6));
-
-          if (data.type === "sources" && data.sources.length > 0) {
-            renderSources(sourcesBox, data.sources);
-          } else if (data.type === "token") {
-            contentEl.textContent += data.content;
-            scroll();
-          }
-        }
+      if (data.sources && data.sources.length > 0) {
+        renderSources(sourcesBox, data.sources);
       }
+      scroll();
     } catch (err) {
       if (typingEl.parentNode) typingEl.remove();
       addMsg("Connection error. Is the server running?", "bot");
