@@ -971,7 +971,7 @@ by <a href="https://www.linkedin.com/in/charliecrocker/">Charlie Crocker</a></p>
       var response = await fetch(API_URL + "/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        credentials: "include",
+        credentials: "omit",
         body: JSON.stringify({ message: text }),
       });
 

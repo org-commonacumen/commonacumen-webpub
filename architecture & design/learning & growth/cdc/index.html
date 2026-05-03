@@ -1114,7 +1114,7 @@ contains some one click Deploy to Azure and use cases to learn more about Azure 
       var response = await fetch(API_URL + "/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        credentials: "include",
+        credentials: "omit",
         body: JSON.stringify({ message: text }),
       });
 
