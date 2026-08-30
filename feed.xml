@@ -1,4 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-30T22:31:38+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The Frontier Firm Bet</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/" rel="alternate" type="text/html" title="The Frontier Firm Bet" /><published>2026-04-25T13:33:30+00:00</published><updated>2026-04-25T13:33:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/"><![CDATA[<h3 id="a-decision-makers-case-for-microsoft-ai-fabric-foundry-and-m365--better-together-with-databricks-snowflake-via-onelake-delta-and-iceberg">A Decision-Maker’s Case for Microsoft AI, Fabric, Foundry, and M365 — Better Together with Databricks, Snowflake via OneLake, Delta and Iceberg</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-30T22:46:34+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The ABCs of Empowering Builders to combine Human and Token capital to achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to combine Human and Token capital to achieve more" /><published>2026-08-30T19:44:30+00:00</published><updated>2026-08-30T19:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more</h2>
+
+<hr />
+
+<p>I am presenting a couple of sessions later this month at <a href="https://www.digitimes.com.tw/seminar/DevDaysAsia2026/index_en.html">Microsoft DevDays Asia 2026</a>.  Here is some of the strategy and thinking behind expanding the AI, Agents, Apps, Analytics, and All Data approach that I referred to as the 5As last year.  This year I am expanding it to be a composite of People, Processes and Technology.  The expansion of the approach for this year is titled, “The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more”.  For individuals trying to get their organization to move forward to become a Frontier Firm, hopefully this post can help articulate the need and provide motivation to migrate, modernize, and transform the way you and others work in your organization. This will all take people, process, and technology to learn the ABCs of AI transformation.</p>
+
+<p>I have had the privelage to work at Microsoft for nearly 20 years, helping empower customers to realize Microsoft’s Mission to “Empower every person and organization on the planet to achieve more”.  From the strategy and thought leadership perspective what are the ABCs of realizing this vision of achieving more as an individual person and for a broader organization?  How do you Amplify the <strong>Agency</strong> and Ambition for you and the people around you?</p>
+
+<p>Microsoft has many platforms and tools that place AI in the flow of human ambition. M365 Copilot with its Chat, Cowork, and to be released Code, and Autopilots (like Scout) is a discovery and execution canvas for everyone.  These Copilot AI tools also show up in Office and Teams and when using these tools all that data is captured in the Microsoft Graph where <strong>Builders</strong> can then build Agents in Copilot Studio, Foundry, and GitHub Copilot and Fabric (structured data). Microsoft platforms and tools help build a virtuous cycle that captures knowledge and compounds intelligence.  A continuous learning loop that combines Human capital + Token capital build frontier firms.</p>
+
+<p><img src="/assets/images/postimages/abcs/aiinflow.png" alt="AIinFlow" /></p>
+
+<p>So what are the ABCs or learning, building, and reaching frontier?  It takes a framework and a journey.</p>
+
+<h3 id="abc-framework">ABC Framework</h3>
+
+<p><img src="/assets/images/postimages/abcs/abcsoflearning.png" alt="ABCsOfLearning" /></p>
+
+<p>For me the ABCs framework includes the combination of <strong>Agency</strong>, <strong>Builders</strong>, and <strong>Capabilities</strong>.</p>
+
+<p>The journey takes Discovery, Experience, and a Frontier perspective and mindset.</p>
+
+<p>The ABC framework is inspired by Self-determination Theory (SDT) that postulates that individuals are naturally driven to grow and learn when their 3 basic psychological needs are met.  Those three needs are Autonomy, Competency, and Relatedness.</p>
+
+<p>Drilling into <strong>Agency</strong> (Choice) I will start from the technology perspective of the 5As: AI, Agents, Analytics, Apps, and All Data.  When I say All Data I mean both the structured and unstructured data available inside and outside the organization that individuals and organisations can use to amplify their <strong>Agency</strong> and ambition.</p>
+
+<p><img src="/assets/images/postimages/abcs/fiveas.png" alt="5As" /></p>
+
+<p>Focusing on people, they must be empowered through the use of these 5A technologies so they are provided the choice of platforms and tools that enable people to become <strong>Builders</strong>; not just consumers, but <strong>Builders</strong> and consumers of solutions and better business processes.</p>
+
+<p><img src="/assets/images/postimages/abcs/builders.png" alt="Builders" /></p>
+
+<h3 id="who-are-builders">Who are <strong>Builders</strong></h3>
+
+<p><strong>Builders</strong> are the ones in the organization that drive realization of the People - Process - Technology triangle.</p>
+
+<p><img src="/assets/images/postimages/abcs/ppt.png" alt="PPT" /></p>
+
+<p>Processes like Plan → Build → Run</p>
+
+<p><img src="/assets/images/postimages/abcs/ptl.png" alt="PTL" /></p>
+
+<p><img src="/assets/images/postimages/abcs/baas.png" alt="BuildingAgentsAtScale" /></p>
+
+<p>It is the combination of <strong>Agency</strong>, and <strong>Builders</strong> and their <strong>Capabilities</strong> that move organizations to becoming Frontier firms. The Builders leverage the 5As along with the uniquelly Human <strong>Capabilities</strong> that Ryan Roslansky and Aneesh Raman refer to in their book <a href="https://www.amazon.com/Open-Work-How-Get-Ahead/dp/0063486466">Open to Work</a> as the 5Cs: Curiosity, Creativity, Communication, Courage, and Compassion.</p>
+
+<p>And just like the overlaps you will find in the 5As (where it is difficult to discern where technology is categorized because AI, Agent, Apps, Analytic, and All Data is part of all things in GenAI) there are other listings of Cs like: 
+1) Satya Nadella’s <a href="https://snscratchpad.com/posts/reverse-information-paradox/">The Reverse Information Paradox</a>: Control, Capability, Choice, Cost, Compound.</p>
+
+<p><img src="/assets/images/postimages/abcs/clloop.png" alt="ContinuousLearningLoop" /></p>
+
+<p>Organizations need to leverage Human Capital plus Token Capital to become a Frontier Firm.  Frontier Firms own their AI learning loop — building proprietary intelligence on top of foundation models using Reinforcement Learning Environments (RLEs) and Private Evaluations, rather than renting static AI <strong>Capabilities</strong> from a vendor.</p>
+
+<p>Human Capital + Token Capital = Frontier Firm</p>
+
+<p><img src="/assets/images/postimages/abcs/capital.png" alt="Capital" /></p>
+
+<p>2) Microsoft’s consultative mindset of: Context, Curiousity, and Co-create related to conversations which are part of communiction.</p>
+
+<p>Context which is so critical for working with Large Language Models (LLMs).  It terms of a consultative mindset Context is how you prepare for a customer conversation grounded in the customer’s reality, including their industry, stakeholders, and the key decisions.</p>
+
+<p>Curiosity is present in Open to Work’s 5Cs as well. Curiosity is how we slow down, understand what really matters, and move conversations to the right problem.  It is also how we keep continuously learning throughout our lives.</p>
+
+<p>Then there is Co-creation where a person and an LLM can create a new App, or work in teams and with customers. Co-create is where understanding turns into direction, and value takes shape</p>
+
+<h3 id="bringing-the-cs-together">Bringing the Cs together</h3>
+<p>The Cs aren’t steps; they’re a conversation choreography. You already know Context, Curiosity, and Co-create. The real skill is sensing which one the conversation needs now — and responding with intention instead of habit.</p>
+
+<p>To quote Open to Work, “Don’t just be open to work; be open to building the next version of work.”</p>
+
+<p><img src="/assets/images/postimages/abcs/ghcp.png" alt="GitHubCopilot" /></p>
+
+<p><img src="/assets/images/postimages/abcs/agentplatform.png" alt="AgentPlatform" /></p>
+
+<p><img src="/assets/images/postimages/abcs/microsoftiq.png" alt="MicrosoftIQ" /></p>
+
+<p><img src="/assets/images/postimages/abcs/rayfin.png" alt="Rayfin" /></p>
+
+<p>[NEED This]
+<img src="/assets/images/postimages/abcs/zavarta.png" alt="ZavaRTA" /></p>
+
+<p><img src="/assets/images/postimages/abcs/booksandref.png" alt="BooksAndRef" /></p>
+
+<p>Resources for Charles and the two new releases here</p>
+
+<h3 id="resources">Resources</h3>
+
+<p><a href="https://snscratchpad.com/posts/reverse-information-paradox/"><strong>The Reverse Information Paradox</strong> - Satya Nadella</a></p>
+
+<p><a href="https://www.amazon.com/Open-Work-How-Get-Ahead/dp/0063486466"><strong>Open to Work</strong> - Ryan Roslansky &amp; Aneesh Raman</a></p>
+
+<p><a href="https://www.amazon.com/Agency-Psychological-History-Human-Progress/dp/B0GS2RGJSW"><strong>Agency</strong> - Martin E. P. Seligman</a></p>
+
+<p><a href="https://www.amazon.com/s?k=situated+angela+duckworth&amp;crid=1WS44B9UGRV92"><strong>Situated</strong> - Angela Duckworth</a></p>
+
+<p><a href="https://www.linkedin.com/pulse/changing-how-we-build-charles-lamanna-xpitc/"><strong>Changing how we Build</strong> - Charles Lamanna</a></p>
+
+<p>If you are in Taipei for DevDays Asis 2026 please find me and say hi.</p>
+
+<p>Look for posts on the tech sessions and GitHub Repos after the presentations in September</p>]]></content><author><name>CommonAcumen</name></author><category term="ai and agents" /><category term="ai coding agents" /><category term="ai" /><category term="aicodingagents" /><category term="agents" /><category term="analytics" /><category term="apps" /><category term="alldata" /><category term="architecture" /><summary type="html"><![CDATA[The ABCs of Empowering Builders to combine Human and Token capital to achieve more]]></summary></entry><entry><title type="html">The Frontier Firm Bet</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/" rel="alternate" type="text/html" title="The Frontier Firm Bet" /><published>2026-04-25T13:33:30+00:00</published><updated>2026-04-25T13:33:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/"><![CDATA[<h3 id="a-decision-makers-case-for-microsoft-ai-fabric-foundry-and-m365--better-together-with-databricks-snowflake-via-onelake-delta-and-iceberg">A Decision-Maker’s Case for Microsoft AI, Fabric, Foundry, and M365 — Better Together with Databricks, Snowflake via OneLake, Delta and Iceberg</h3>
 
 <p><em>For architects designing the estate. For executives funding it. For both, the same conclusion.</em></p>
 
@@ -1126,42 +1225,4 @@ The major architectural components of any system are the software and the hardwa
 
 <p>Stay Safe,</p>
 
-<p>Darwin</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="solutions" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in July 2020]]></summary></entry><entry><title type="html">Data Skills Transitions are like Sunsets and Sunrises</title><link href="https://blog.commonacumen.com/learning%20&%20growth/sunrise/" rel="alternate" type="text/html" title="Data Skills Transitions are like Sunsets and Sunrises" /><published>2020-01-30T13:33:30+00:00</published><updated>2020-01-30T13:33:30+00:00</updated><id>https://blog.commonacumen.com/learning%20&amp;%20growth/sunrise</id><content type="html" xml:base="https://blog.commonacumen.com/learning%20&amp;%20growth/sunrise/"><![CDATA[<p>This is a new update to test
-Check out this past post from the Microsoft Data Architecture Blog in January 2020</p>
-
-<p><img src="/assets/images/postimages/sunrises.png" alt="sunrises" /></p>
-
-<p>I was inspired by Buck Woody’s post on Monday but it was not until I was walking the dog (Hudson) this morning that I got the hook I was looking for.  My Mom always said, when it came to sunrises and sunsets “Orange sky in morning sailors take warning; Orange sky at night sailors delight”.</p>
-
-<p><img src="/assets/images/postimages/sunrise.jpg" alt="sunrisepic" /></p>
-
-<p>We can argue over the color of this sunrise (it is winter in Seattle so any sun is good), but when it comes to Data Skills transitions as Data professionals (Data Architects, DBAs, Data Engineers, Data Scientists) we need to heed the warnings.  Cloud Data, AI and BI offerings like Azure Synapse Analytics, Azure Machine Learning, Azure Data Factory, Azure Databricks, Azure Data Lake Storage, and Power BI have changed the game.</p>
-
-<p>I started my data warehousing and decision support career back in 1993 and have seen many a product sunset: <a href="https://en.wikipedia.org/wiki/Metaphor_Computer_Systems">Metaphor Computer Systems</a>, Sagent (great ETL tool the is somewhere in <a href="https://www.pitneybowes.com/us">Pitney Bowes</a> data integration), and <a href="https://en.wikipedia.org/wiki/Brio_Technology">Brio Technology</a></p>
-
-<p>I moved to Seattle 23 years ago and used SQL Server 6.5, Sagent, and Brio to enable data analysts at University of Washington Physicians.  I quickly migrated my data mart to SQL Server 7 in 1998.  SQL Server had a major impact on the BI/DW industry (OLAP services changed the market) and on my career.  It was important for my career when I joined Business Objects as an OLAP champion back in 2000 and at WaMu where a team I managed deployed SQL Server and Bobj like crazy.  I joined Microsoft in 2005 just before SQL Server 2005 launched.  In 2005 I also attended my first TechReady (Microsoft Tech internal event) at the Washington State Convention Center.  It was an awesome readiness event all the way to TechReady 24 (that is 12 years because these happen twice a year).  We are at the sunrise of Winter Ready in Seattle this Monday Feb 3rd.  I can’t wait to learn about and skillup because I can see the new data skills needed on the horizon.</p>
-
-<p>So why this history lesson?  If you are seasoned like me and nearing the sunset of your career, I implore you to batten down the hatches and get ready for the storm by upskilling.  Businesses need your energy and experience.  Many of you are well on your way.  Don’t let all the newbies get all the opportunities for the new projects that are out there, the the new generation of Data Pros need us.  For people early in your data careers IMO you have an awesome future.  I think SQL Server 2019 Big Data Clusters and the things it “Spawned” like <a href="https://azure.microsoft.com/en-us/services/azure-arc/">Azure Arc</a> and <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/">Azure Synapse Analytics</a> will provide you with decades of learning, challenges, and employment.</p>
-
-<p>I have had a love/hate relationship with certifications but would recommend <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer">Microsoft Certified: Azure Data Engineer Associate</a>.</p>
-
-<p>IMO, it will make us all better and the more people that take it the better the certification will be.</p>
-
-<p>But get your hours in using the Azure Portal and Power BI Portal. Lets be Ready and Certified.</p>
-
-<p>May there be many sunrises and sunsets in your work and personal lives.</p>
-
-<p>Thanks for joining the Data Architecture Community!</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Darwin Schweitzer</td>
-      <td>Cloud Solution Architect</td>
-    </tr>
-    <tr>
-      <td><a href="mailto:darsch@microsoft.com">darsch@microsoft.com</a></td>
-      <td>GitHub <a href="https://github.com/DataSnowman">DataSnowman</a></td>
-    </tr>
-  </tbody>
-</table>]]></content><author><name>CommonAcumen</name></author><category term="learning &amp; growth" /><category term="skilling" /><summary type="html"><![CDATA[This is a new update to test Check out this past post from the Microsoft Data Architecture Blog in January 2020]]></summary></entry></feed>
+<p>Darwin</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="solutions" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in July 2020]]></summary></entry></feed>

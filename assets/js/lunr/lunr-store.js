@@ -58,4 +58,10 @@ var store = [{
         "tags": ["ai","aicodingagents","agents","analytics","apps","architecture"],
         "url": "/ai%20and%20agents/ai%20coding%20agents/prosumerfrontierfirm/",
         "teaser": null
+      },{
+        "title": "The ABCs of Empowering Builders to combine Human and Token capital to achieve more",
+        "excerpt":"The ABCs of Empowering Builders to combine Human and Token capital to achieve more I am presenting a couple of sessions later this month at Microsoft DevDays Asia 2026. Here is some of the strategy and thinking behind expanding the AI, Agents, Apps, Analytics, and All Data approach that I...","categories": ["ai and agents","ai coding agents"],
+        "tags": ["ai","aicodingagents","agents","analytics","apps","alldata","architecture"],
+        "url": "/ai%20and%20agents/ai%20coding%20agents/abcs/",
+        "teaser": null
       }]
