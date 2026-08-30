@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-30T22:46:34+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The ABCs of Empowering Builders to combine Human and Token capital to achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to combine Human and Token capital to achieve more" /><published>2026-08-30T19:44:30+00:00</published><updated>2026-08-30T19:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-30T23:29:59+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The ABCs of Empowering Builders to combine Human and Token capital to achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to combine Human and Token capital to achieve more" /><published>2026-08-30T19:44:30+00:00</published><updated>2026-08-30T19:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more</h2>
 
 <hr />
 
-<p>I am presenting a couple of sessions later this month at <a href="https://www.digitimes.com.tw/seminar/DevDaysAsia2026/index_en.html">Microsoft DevDays Asia 2026</a>.  Here is some of the strategy and thinking behind expanding the AI, Agents, Apps, Analytics, and All Data approach that I referred to as the 5As last year.  This year I am expanding it to be a composite of People, Processes and Technology.  The expansion of the approach for this year is titled, “The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more”.  For individuals trying to get their organization to move forward to become a Frontier Firm, hopefully this post can help articulate the need and provide motivation to migrate, modernize, and transform the way you and others work in your organization. This will all take people, process, and technology to learn the ABCs of AI transformation.</p>
+<p>I am presenting a couple of sessions in September at <a href="https://www.digitimes.com.tw/seminar/DevDaysAsia2026/index_en.html">Microsoft DevDays Asia 2026</a>.  Here is some of the strategy and thinking behind expanding last years AI, Agents, Apps, Analytics, and All Data approach that I referred to as the 5As.  This year I am expanding it to be a composite of People, Processes and Technology.  The expansion of the approach is titled, “The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more”.  For individuals trying to get their organization to move forward to become a Frontier Firm, hopefully this post can help articulate the need and provide motivation to migrate, modernize, and transform the way you and others work in your organization. It takes people, process, and technology to learn the ABCs of AI transformation.</p>
 
-<p>I have had the privelage to work at Microsoft for nearly 20 years, helping empower customers to realize Microsoft’s Mission to “Empower every person and organization on the planet to achieve more”.  From the strategy and thought leadership perspective what are the ABCs of realizing this vision of achieving more as an individual person and for a broader organization?  How do you Amplify the <strong>Agency</strong> and Ambition for you and the people around you?</p>
+<p>I have had the privilege to work at Microsoft for nearly 20 years, helping empower customers to realize Microsoft’s Mission to “Empower every person and organization on the planet to achieve more”.  From the strategy and thought leadership perspective what are the ABCs of realizing this vision of achieving more as an individual person and for a broader organization?  How do you Amplify the <strong>Agency</strong> and Ambition for you and the people around you?</p>
 
-<p>Microsoft has many platforms and tools that place AI in the flow of human ambition. M365 Copilot with its Chat, Cowork, and to be released Code, and Autopilots (like Scout) is a discovery and execution canvas for everyone.  These Copilot AI tools also show up in Office and Teams and when using these tools all that data is captured in the Microsoft Graph where <strong>Builders</strong> can then build Agents in Copilot Studio, Foundry, and GitHub Copilot and Fabric (structured data). Microsoft platforms and tools help build a virtuous cycle that captures knowledge and compounds intelligence.  A continuous learning loop that combines Human capital + Token capital build frontier firms.</p>
+<p>Microsoft has many platforms and tools that place AI in the flow of human ambition. M365 Copilot with its Chat, Cowork, and to be released Code, and Autopilots (like Scout) is a discovery and execution canvas for everyone.  These Copilot AI tools also show up in Office and Teams and when using these tools all that data is captured in the Microsoft Graph where <strong>Builders</strong> can use unstructured data to build Agents in Copilot Studio, Foundry, and GitHub Copilot and combine it with structured data using Fabric Data Agents. Microsoft platforms and tools help build a virtuous cycle that captures knowledge and compounds intelligence.  A continuous learning loop that combines Human capital + Token capital build frontier firms.</p>
 
 <p><img src="/assets/images/postimages/abcs/aiinflow.png" alt="AIinFlow" /></p>
 
@@ -22,7 +22,7 @@
 
 <p>The ABC framework is inspired by Self-determination Theory (SDT) that postulates that individuals are naturally driven to grow and learn when their 3 basic psychological needs are met.  Those three needs are Autonomy, Competency, and Relatedness.</p>
 
-<p>Drilling into <strong>Agency</strong> (Choice) I will start from the technology perspective of the 5As: AI, Agents, Analytics, Apps, and All Data.  When I say All Data I mean both the structured and unstructured data available inside and outside the organization that individuals and organisations can use to amplify their <strong>Agency</strong> and ambition.</p>
+<p>Drilling into <strong>Agency</strong> (Choice) I will start from the technology perspective of the 5As: AI, Agents, Analytics, Apps, and All Data.  When I say All Data I mean both the structured and unstructured data available inside and outside the organization that individuals and organizations can use to amplify their <strong>Agency</strong> and ambition.</p>
 
 <p><img src="/assets/images/postimages/abcs/fiveas.png" alt="5As" /></p>
 
@@ -42,7 +42,7 @@
 
 <p><img src="/assets/images/postimages/abcs/baas.png" alt="BuildingAgentsAtScale" /></p>
 
-<p>It is the combination of <strong>Agency</strong>, and <strong>Builders</strong> and their <strong>Capabilities</strong> that move organizations to becoming Frontier firms. The Builders leverage the 5As along with the uniquelly Human <strong>Capabilities</strong> that Ryan Roslansky and Aneesh Raman refer to in their book <a href="https://www.amazon.com/Open-Work-How-Get-Ahead/dp/0063486466">Open to Work</a> as the 5Cs: Curiosity, Creativity, Communication, Courage, and Compassion.</p>
+<p>It is the combination of <strong>Agency</strong>, and <strong>Builders</strong> and their <strong>Capabilities</strong> that move organizations to becoming Frontier firms. The Builders leverage the 5As along with the uniquely Human <strong>Capabilities</strong> that Ryan Roslansky and Aneesh Raman refer to in their book <a href="https://www.amazon.com/Open-Work-How-Get-Ahead/dp/0063486466">Open to Work</a> as the 5Cs: Curiosity, Creativity, Communication, Courage, and Compassion.</p>
 
 <p>And just like the overlaps you will find in the 5As (where it is difficult to discern where technology is categorized because AI, Agent, Apps, Analytic, and All Data is part of all things in GenAI) there are other listings of Cs like: 
 1) Satya Nadella’s <a href="https://snscratchpad.com/posts/reverse-information-paradox/">The Reverse Information Paradox</a>: Control, Capability, Choice, Cost, Compound.</p>
@@ -55,7 +55,7 @@
 
 <p><img src="/assets/images/postimages/abcs/capital.png" alt="Capital" /></p>
 
-<p>2) Microsoft’s consultative mindset of: Context, Curiousity, and Co-create related to conversations which are part of communiction.</p>
+<p>2) Microsoft’s consultative mindset of: Context, Curiosity, and Co-create related to conversations which are part of communication.</p>
 
 <p>Context which is so critical for working with Large Language Models (LLMs).  It terms of a consultative mindset Context is how you prepare for a customer conversation grounded in the customer’s reality, including their industry, stakeholders, and the key decisions.</p>
 
@@ -64,9 +64,9 @@
 <p>Then there is Co-creation where a person and an LLM can create a new App, or work in teams and with customers. Co-create is where understanding turns into direction, and value takes shape</p>
 
 <h3 id="bringing-the-cs-together">Bringing the Cs together</h3>
-<p>The Cs aren’t steps; they’re a conversation choreography. You already know Context, Curiosity, and Co-create. The real skill is sensing which one the conversation needs now — and responding with intention instead of habit.</p>
+<p>The Cs are no6 steps; they’re a conversation choreography. You already know Context, Curiosity, and Co-create. The real skill is sensing which one the conversation needs now — and responding with intention instead of habit.</p>
 
-<p>To quote Open to Work, “Don’t just be open to work; be open to building the next version of work.”</p>
+<p>To quote <strong>Open to Work</strong>, “Don’t just be open to work; be open to building the next version of work.”</p>
 
 <p><img src="/assets/images/postimages/abcs/ghcp.png" alt="GitHubCopilot" /></p>
 
@@ -76,8 +76,7 @@
 
 <p><img src="/assets/images/postimages/abcs/rayfin.png" alt="Rayfin" /></p>
 
-<p>[NEED This]
-<img src="/assets/images/postimages/abcs/zavarta.png" alt="ZavaRTA" /></p>
+<p><img src="/assets/images/postimages/abcs/zavarta.png" alt="ZavaRTA" /></p>
 
 <p><img src="/assets/images/postimages/abcs/booksandref.png" alt="BooksAndRef" /></p>
 
@@ -95,9 +94,9 @@
 
 <p><a href="https://www.linkedin.com/pulse/changing-how-we-build-charles-lamanna-xpitc/"><strong>Changing how we Build</strong> - Charles Lamanna</a></p>
 
-<p>If you are in Taipei for DevDays Asis 2026 please find me and say hi.</p>
+<p>If you are in Taipei for DevDays Asia 2026 please find me and say hi.</p>
 
-<p>Look for posts on the tech sessions and GitHub Repos after the presentations in September</p>]]></content><author><name>CommonAcumen</name></author><category term="ai and agents" /><category term="ai coding agents" /><category term="ai" /><category term="aicodingagents" /><category term="agents" /><category term="analytics" /><category term="apps" /><category term="alldata" /><category term="architecture" /><summary type="html"><![CDATA[The ABCs of Empowering Builders to combine Human and Token capital to achieve more]]></summary></entry><entry><title type="html">The Frontier Firm Bet</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/" rel="alternate" type="text/html" title="The Frontier Firm Bet" /><published>2026-04-25T13:33:30+00:00</published><updated>2026-04-25T13:33:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/"><![CDATA[<h3 id="a-decision-makers-case-for-microsoft-ai-fabric-foundry-and-m365--better-together-with-databricks-snowflake-via-onelake-delta-and-iceberg">A Decision-Maker’s Case for Microsoft AI, Fabric, Foundry, and M365 — Better Together with Databricks, Snowflake via OneLake, Delta and Iceberg</h3>
+<p>Look for additional posts on the two Tech sessions including GitHub Repos after the presentations in September.</p>]]></content><author><name>CommonAcumen</name></author><category term="ai and agents" /><category term="ai coding agents" /><category term="ai" /><category term="aicodingagents" /><category term="agents" /><category term="analytics" /><category term="apps" /><category term="alldata" /><category term="architecture" /><summary type="html"><![CDATA[The ABCs of Empowering Builders to combine Human and Token capital to achieve more]]></summary></entry><entry><title type="html">The Frontier Firm Bet</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/" rel="alternate" type="text/html" title="The Frontier Firm Bet" /><published>2026-04-25T13:33:30+00:00</published><updated>2026-04-25T13:33:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/architectexecfrontierfirm/"><![CDATA[<h3 id="a-decision-makers-case-for-microsoft-ai-fabric-foundry-and-m365--better-together-with-databricks-snowflake-via-onelake-delta-and-iceberg">A Decision-Maker’s Case for Microsoft AI, Fabric, Foundry, and M365 — Better Together with Databricks, Snowflake via OneLake, Delta and Iceberg</h3>
 
 <p><em>For architects designing the estate. For executives funding it. For both, the same conclusion.</em></p>
 
