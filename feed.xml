@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-31T00:46:18+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The ABCs of Empowering Builders to combine Human and Token capital to achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to combine Human and Token capital to achieve more" /><published>2026-08-30T19:44:30+00:00</published><updated>2026-08-30T19:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-31T01:07:22+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The ABCs of Empowering Builders to combine Human and Token capital to achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to combine Human and Token capital to achieve more" /><published>2026-08-30T19:44:30+00:00</published><updated>2026-08-30T19:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more</h2>
 
 <hr />
 
-<p>I am presenting a couple of sessions in September at <a href="https://www.digitimes.com.tw/seminar/DevDaysAsia2026/index_en.html">Microsoft DevDays Asia 2026</a>.  Here is some of the strategy and thinking behind expanding last years AI, Agents, Apps, Analytics, and All Data approach that I referred to as the 5As.  This year I am expanding it to be a composite of People, Processes and Technology.  The expansion of the approach is titled, “The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more”.  For individuals trying to get their organization to move forward to become a Frontier Firm, hopefully this post can help articulate the need and provide motivation to migrate, modernize, and transform the way you and others work in your organization. It takes people, process, and technology to learn the ABCs of AI transformation.</p>
+<p>I am presenting a couple of sessions in September at <a href="https://www.digitimes.com.tw/seminar/DevDaysAsia2026/index_en.html">Microsoft DevDays Asia 2026</a>.  Here is some of the strategy and thinking behind expanding last years AI, Agents, Apps, Analytics, and All Data approach that I referred to as the 5As.  This year I am expanding it to be a composite of People, Processes and Technology.  The expansion of the approach is titled, “The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more”.  For individuals trying to get their organization to move forward to become a Frontier Firm, hopefully this post can help articulate the need and provide motivation to migrate, modernize, and transform the way you and others work in your organization. It takes people, process, and technology to learn and execute AI transformation following the the ABC framework.</p>
 
 <p>I have had the privilege to work at Microsoft for nearly 20 years, helping empower customers to realize Microsoft’s Mission to “Empower every person and organization on the planet to achieve more”.  From the strategy and thought leadership perspective what are the ABCs of realizing this vision of achieving more as an individual person and for a broader organization?  How do you Amplify the <strong>Agency</strong> and Ambition for you and the people around you?</p>
 
@@ -44,8 +44,9 @@
 
 <p>It is the combination of <strong>Agency</strong>, and <strong>Builders</strong> and their <strong>Capabilities</strong> that move organizations to becoming Frontier firms. The Builders leverage the 5As along with the uniquely Human <strong>Capabilities</strong> that Ryan Roslansky and Aneesh Raman refer to in their book <a href="https://www.amazon.com/Open-Work-How-Get-Ahead/dp/0063486466">Open to Work</a> as the 5Cs: Curiosity, Creativity, Communication, Courage, and Compassion.</p>
 
-<p>And just like the overlaps you will find in the 5As (where it is difficult to discern where technology is categorized because AI, Agent, Apps, Analytic, and All Data is part of all things in GenAI) there are other listings of Cs like: 
-1) Satya Nadella’s <a href="https://snscratchpad.com/posts/reverse-information-paradox/">The Reverse Information Paradox</a>: Control, Capability, Choice, Cost, Compound.</p>
+<p>And just like the overlaps you will find in the 5As (where it is difficult to discern where technology is categorized because AI, Agent, Apps, Analytic, and All Data is part of all things in GenAI) there are other listings of Cs like:</p>
+
+<p>1) Satya Nadella’s <a href="https://snscratchpad.com/posts/reverse-information-paradox/">The Reverse Information Paradox</a>: Control, Capability, Choice, Cost, Compound.</p>
 
 <p><img src="/assets/images/postimages/abcs/clloop.png" alt="ContinuousLearningLoop" /></p>
 
@@ -64,23 +65,33 @@
 <p>Then there is Co-creation where a person and an LLM can create a new App, or work in teams and with customers. Co-create is where understanding turns into direction, and value takes shape</p>
 
 <h3 id="bringing-the-cs-together">Bringing the Cs together</h3>
-<p>The Cs are no6 steps; they’re a conversation choreography. You already know Context, Curiosity, and Co-create. The real skill is sensing which one the conversation needs now — and responding with intention instead of habit.</p>
+<p>Whether it is the <strong>Open to Work</strong> 5Cs or Satya’s <strong>The Reverse Information Paradox</strong> 5Cs or the ** Consultative mindset 3Cs they are not steps; they’re part of the transformation and conversation. The real skill is sensing which one the transformation and conversation needs now — and responding with intention instead of habit.</p>
 
 <p>To quote <strong>Open to Work</strong>, “Don’t just be open to work; be open to building the next version of work.”</p>
 
+<p>GitHub Copilot CLI makes anyone a Builder.</p>
+
 <p><img src="/assets/images/postimages/abcs/ghcp.png" alt="GitHubCopilot" /></p>
+
+<p>This is the architecture for my demo in the upcomming session: “Leveraging AI Coding Agents with the Microsoft Platform (Copilot Studio, Fabric, Foundry, and M365 Copilot)”</p>
 
 <p><img src="/assets/images/postimages/abcs/agentplatform.png" alt="AgentPlatform" /></p>
 
+<p>Bring together all data with Microsoft IQ.</p>
+
 <p><img src="/assets/images/postimages/abcs/microsoftiq.png" alt="MicrosoftIQ" /></p>
+
+<p>Create Fabric Apps with Rayfin and the GitHub Copilot CLI.</p>
 
 <p><img src="/assets/images/postimages/abcs/rayfin.png" alt="Rayfin" /></p>
 
+<p>This is one of the Apps created in the upcomming session: “Introduction to App Dev with Microsoft Fabric using Rayfin”</p>
+
 <p><img src="/assets/images/postimages/abcs/zavarta.png" alt="ZavaRTA" /></p>
 
-<p><img src="/assets/images/postimages/abcs/booksandref.png" alt="BooksAndRef" /></p>
+<p>Look for the Agency and Situated books to be available in early September.</p>
 
-<p>Resources for Charles and the two new releases here</p>
+<p><img src="/assets/images/postimages/abcs/booksandref.png" alt="BooksAndRef" /></p>
 
 <h3 id="resources">Resources</h3>
 
