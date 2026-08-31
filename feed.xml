@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-31T23:07:49+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The ABCs of Empowering Builders to combine Human and Token capital to achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to combine Human and Token capital to achieve more" /><published>2026-08-31T20:44:30+00:00</published><updated>2026-08-31T20:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-31T23:37:34+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The ABCs of Empowering Builders to combine Human and Token capital to achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to combine Human and Token capital to achieve more" /><published>2026-08-31T20:44:30+00:00</published><updated>2026-08-31T20:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to combine Human and Token capital to achieve more</h2>
 
 <hr />
 
@@ -18,7 +18,7 @@
 
 <p><img src="/assets/images/postimages/abcs/abcsoflearning.png" alt="ABCsOfLearning" /></p>
 
-<p>For me the ABCs framework includes the combination of <strong>Agency</strong>, <strong>Builders</strong>, and <strong>Capabilities</strong> - and the journey takes Discovery, Experience, and a Frontier mindset.</p>
+<p>For me the ABCs framework includes the combination of <strong>Agency</strong>, <strong>Builders</strong>, and <strong>Capabilities</strong> - and the journey takes Discovery, Experience, and a Frontier Mindset.</p>
 
 <p>The ABC framework is inspired by Self-determination Theory (SDT) that postulates that individuals are naturally driven to grow and learn when their 3 basic psychological needs are met.  Those three needs are Autonomy, Competency, and Relatedness.</p>
 
@@ -48,14 +48,9 @@
 
 <h3 id="who-are-builders">Who are <strong>Builders</strong>?</h3>
 
-<p>Builder Roles –&gt;
-• Researchers
-• Business Users
-• Knowledge Workers
-• Developers
-• IT Professionals</p>
+<p><strong>Builders</strong> are not limited to professional developers.  They include researchers, business users, knowledge workers, creatives, and IT professionals – anyone who turns expertise into reusable capability.</p>
 
-<p><strong>Builders</strong> and Use Case</p>
+<p><strong>Builders</strong> and Use Case:</p>
 <ul>
   <li>A sales leader building a customer-insight agent</li>
   <li>A finance analyst creating a Fabric app</li>
@@ -63,15 +58,33 @@
   <li>A business user turning recurring work into an agentic workflow</li>
 </ul>
 
+<h3 id="the-role-of-microsoft-platforms-and-tools">The role of Microsoft platforms and tools:</h3>
+
+<p>Microsoft has many platforms and tools that place AI in the flow of human ambition. M365 Copilot with its Chat, Cowork, and to be released Code, and Autopilots (like Scout) is a discovery and execution canvas for everyone.  These Copilot AI tools also show up in Office and Teams and when using these tools all that data is captured in the Microsoft Graph where <strong>Builders</strong> can use unstructured data to build Agents in Copilot Studio, Foundry, and GitHub Copilot and combine it with structured data using Fabric Data Agents. Microsoft platforms and tools help build a virtuous cycle that captures knowledge and compounds intelligence.  A continuous learning loop that combines Human capital + Token capital build frontier firms.</p>
+
+<p><img src="/assets/images/postimages/abcs/aiinflow.png" alt="AIinFlow" /></p>
+
+<p>So what are the ABCs of learning, building, and reaching frontier?  It takes a framework and a journey, but it really takes <strong>Builders</strong>.</p>
+
+<p>GitHub Copilot CLI makes anyone a Builder.</p>
+
+<p><img src="/assets/images/postimages/abcs/ghcp.png" alt="GitHubCopilot" /></p>
+
+<p>Bring together all data with Microsoft IQ.</p>
+
+<p><img src="/assets/images/postimages/abcs/microsoftiq.png" alt="MicrosoftIQ" /></p>
+
 <h3 id="bringing-the-abcs-together---human-capital--token-capital-how-intelligence-compounds">Bringing the ABCs together - Human capital + token capital: How intelligence compounds</h3>
 
-<p>And just like the overlaps you will find in the 5As (where it is difficult to discern where technology is categorized because <strong>AI, Agent, Apps, Analytic, and All Data</strong> are part of all things in GenAI) there are other listings of Cs like:</p>
+<p>And just like the overlaps you will find in the 5As (where it is difficult to discern where technology is categorized because <strong>AI, Agents, Apps, Analytic, and All Data</strong> are part of all things in GenAI) there are other listings of Cs like:</p>
 
 <p>Satya Nadella’s <a href="https://snscratchpad.com/posts/reverse-information-paradox/">The Reverse Information Paradox</a>: Control, Capability, Choice, Cost, Compound.</p>
 
 <p><img src="/assets/images/postimages/abcs/clloop.png" alt="ContinuousLearningLoop" /></p>
 
 <p>Organizations need to leverage Human Capital plus Token Capital to become a Frontier Firm.  Frontier Firms own their AI learning loop — building proprietary intelligence on top of foundation models using Reinforcement Learning Environments (RLEs) and Private Evaluations, rather than renting static AI <strong>Capabilities</strong> from a vendor.</p>
+
+<p>Token capital is the reusable AI-powered work product an organization accumulates: prompts, agents, evaluations, workflows, embeddings, and institutional knowledge encoded into systems.</p>
 
 <p>Human Capital + Token Capital = Frontier Firm</p>
 
@@ -85,27 +98,13 @@
 
 <p>Then there is Co-creation where a person and an LLM can create a new App, or work in teams and with customers. Co-create is where understanding turns into direction, and value takes shape</p>
 
-<p>Whether it is the <strong>Open to Work</strong> 5Cs or Satya’s <strong>The Reverse Information Paradox</strong> 5Cs or the ** Consultative mindset 3Cs they are not steps; they’re part of the transformation and conversation. The real skill is sensing which one the transformation and conversation needs now — and responding with intention instead of habit.</p>
+<p>Whether it is the <strong>Open to Work</strong> 5Cs or Satya’s <strong>The Reverse Information Paradox</strong> 5Cs or <strong>The Consultative Mindset 3Cs</strong> they are not steps; they’re part of the transformation and conversation. The real skill is sensing which one the transformation and conversation needs now — and responding with intention instead of habit.</p>
 
 <p>To quote <strong>Open to Work</strong>, “Don’t just be open to work; be open to building the next version of work.”</p>
 
-<h3 id="the-role-of-microsoft-platforms-and-tools">The role of Microsoft platforms and tools:</h3>
-
-<p>Microsoft has many platforms and tools that place AI in the flow of human ambition. M365 Copilot with its Chat, Cowork, and to be released Code, and Autopilots (like Scout) is a discovery and execution canvas for everyone.  These Copilot AI tools also show up in Office and Teams and when using these tools all that data is captured in the Microsoft Graph where <strong>Builders</strong> can use unstructured data to build Agents in Copilot Studio, Foundry, and GitHub Copilot and combine it with structured data using Fabric Data Agents. Microsoft platforms and tools help build a virtuous cycle that captures knowledge and compounds intelligence.  A continuous learning loop that combines Human capital + Token capital build frontier firms.</p>
-
-<p><img src="/assets/images/postimages/abcs/aiinflow.png" alt="AIinFlow" /></p>
-
-<p>So what are the ABCs of learning, building, and reaching frontier?  It takes a framework and a journey, but it really takes *Builders**.</p>
-
-<p>GitHub Copilot CLI makes anyone a Builder.</p>
-
-<p><img src="/assets/images/postimages/abcs/ghcp.png" alt="GitHubCopilot" /></p>
-
-<p>Bring together all data with Microsoft IQ.</p>
-
-<p><img src="/assets/images/postimages/abcs/microsoftiq.png" alt="MicrosoftIQ" /></p>
-
 <h2 id="devdays-demos">DevDays demos</h2>
+
+<p>The DevDays sessions will show what this looks like in practice: using GitHub Copilot CLI, Copilot Studio, Fabric, Foundry, and M365 Copilot to turn the ABC framework into working examples.</p>
 
 <p>This is the architecture for my demo in the upcoming session: “Leveraging AI Coding Agents with the Microsoft Platform (Copilot Studio, Fabric, Foundry, and M365 Copilot)”</p>
 
@@ -115,7 +114,7 @@
 
 <p><img src="/assets/images/postimages/abcs/rayfin.png" alt="Rayfin" /></p>
 
-<p>This is one of the Apps created in the upcomming session: “Introduction to App Dev with Microsoft Fabric using Rayfin”</p>
+<p>This is one of the Apps created in the upcoming session: “Introduction to App Dev with Microsoft Fabric using Rayfin”</p>
 
 <p><img src="/assets/images/postimages/abcs/zavarta.png" alt="ZavaRTA" /></p>
 
