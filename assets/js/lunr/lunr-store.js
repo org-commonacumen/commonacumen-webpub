@@ -60,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "The ABCs of Empowering Builders to combine Human and Token capital to achieve more",
-        "excerpt":"The ABCs of Empowering Builders to combine Human and Token capital to achieve more Labor Day is a week away, so this is a shout out to the people - the Labor Force, the Builders. AI transformation is not just about Large Language Models (LLMs) and adopting tools. It is...","categories": ["ai and agents","ai coding agents"],
+        "excerpt":"The ABCs of Empowering Builders to combine Human and Token capital to achieve more Labor Day is a week away, so this is a shout out to the people – the labor force, the Builders. AI transformation is not just about Large Language Models (LLMs) and adopting tools. It is...","categories": ["ai and agents","ai coding agents"],
         "tags": ["ai","aicodingagents","agents","analytics","apps","alldata","architecture"],
         "url": "/ai%20and%20agents/ai%20coding%20agents/abcs/",
         "teaser": null
