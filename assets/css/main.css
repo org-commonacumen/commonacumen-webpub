@@ -4561,6 +4561,29 @@ a:focus {
   border-radius: 24px;
   box-shadow: var(--ca-shadow); }
 
+.page__content .highlight {
+  position: relative; }
+
+.copy-code-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--ca-border-strong);
+  border-radius: 0.4rem;
+  background: #111c31;
+  color: var(--ca-text);
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  cursor: pointer; }
+
+.copy-code-button:hover,
+.copy-code-button:focus-visible {
+  background: #1a2b46;
+  color: #fff; }
+
 @media (max-width: 960px) {
   .studio-hero__grid,
   .studio-card-grid,
