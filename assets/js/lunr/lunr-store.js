@@ -64,4 +64,10 @@ var store = [{
         "tags": ["ai","aicodingagents","agents","analytics","apps","alldata","architecture"],
         "url": "/ai%20and%20agents/ai%20coding%20agents/abcs/",
         "teaser": null
+      },{
+        "title": "Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo",
+        "excerpt":"Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo Not sure if you saw this week’s Surface Ultra launch on October 7, 2026. I put together a GitHub repo demonstrating demand planning and processing spreadsheets with synthetic data using Cowork. I used to...","categories": ["ai and agents","ai coding agents","copilot"],
+        "tags": ["ai","aicodingagents","agents","analytics","apps","copilot","cowork"],
+        "url": "/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand/",
+        "teaser": null
       }]

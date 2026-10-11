@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-08-31T23:58:01+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">The ABCs of Empowering Builders to Combine Human and Token Capital to Achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to Combine Human and Token Capital to Achieve more" /><published>2026-08-31T20:44:30+00:00</published><updated>2026-08-31T20:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to Combine Human and Token Capital to Achieve more</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-10-11T21:25:38+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand/" rel="alternate" type="text/html" title="Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo" /><published>2026-10-11T20:44:30+00:00</published><updated>2026-10-11T20:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand/"><![CDATA[<h2 id="processing-rtx-spark-gb10-demand-with-excel-and-copilot-cowork-with-a-github-repo-and-demo">Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo</h2>
+
+<hr />
+
+<p>Not sure if you saw this week’s Surface Ultra launch on October 7, 2026. I put together a <a href="https://github.com/DataSnowman/DemandPlanning">GitHub repo</a> demonstrating demand planning and processing spreadsheets with synthetic data using Cowork. I used to do this for IBM in the 1990s for IBM servers, desktops, and laptops for the Large Accounts, Demand Planning, and Cost Engineering teams at IBM PC Company. Except it was with PROFS email, Lotus 1-2-3 spreadsheets, DB2, and a decision support product called <strong>Metaphor</strong>. Kind of retro, modern, and frontier all at the same time.</p>
+
+<p>You can find the demo here: <a href="https://www.youtube.com/watch?v=rZMH9sxk3ek">Cowork Demo of Processing RTX Spark GB10 Demand with Excel and Copilot Cowork</a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Here is the October 7th event: [Something new is coming from Windows</td>
+      <td>October 7](https://www.youtube.com/watch?v=ilmBGeGldrI&amp;t=1163s)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here is an image of the summary spreadsheet created using a prompt in Copilot Cowork:</p>
+
+<p><img src="https://raw.githubusercontent.com/DataSnowman/DemandPlanning/main/docs/part1-chat-output.png" alt="part1-chat-output" /></p>
+
+<p>You can find the prompt in the README here: <a href="https://github.com/DataSnowman/DemandPlanning#part-2--cowork-aggregate-spreadsheets-from-a-onedrive-folder">Part 2 — Cowork: aggregate spreadsheets from a OneDrive folder</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In my OneDrive folder "C:\Users\&lt;you&gt;\OneDrive - Microsoft\SurfaceCatalogs", find every .xlsx
+file (skip any file whose name starts with "summary", and ignore the output subfolder). Append
+the attached spreadsheets into a single summary&lt;dateRun&gt;.xlsx, where &lt;dateRun&gt; is the 
+current date and time (for example 2026-10-01_1408) so running it more than once a day won't 
+overwrite the previous file. Keep one header row, add a "Source File" column so I can tell which
+retailer each row came from, and drop any blank or total rows. Confirm the columns match across 
+all three files first, then show me the row count and which files were combined. Fix any column
+order discrepancies, as well as converting any units (like grams, oz, pounds to one unit of measure)
+with a preference for pounds related to weight and inches related to things like screen size. Save
+it inside a "PromptSummary" subfolder of that OneDrive folder (create the PromptSummary folder
+if it doesn't exist). Do not modify the source files. When done, tell me the row count, the column
+count, and which files were combined.
+</code></pre></div></div>
+
+<p>Have a look and try to set up the demo in your Copilot Cowork.</p>]]></content><author><name>CommonAcumen</name></author><category term="ai and agents" /><category term="ai coding agents" /><category term="copilot" /><category term="ai" /><category term="aicodingagents" /><category term="agents" /><category term="analytics" /><category term="apps" /><category term="copilot" /><category term="cowork" /><summary type="html"><![CDATA[Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo]]></summary></entry><entry><title type="html">The ABCs of Empowering Builders to Combine Human and Token Capital to Achieve more</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/" rel="alternate" type="text/html" title="The ABCs of Empowering Builders to Combine Human and Token Capital to Achieve more" /><published>2026-08-31T20:44:30+00:00</published><updated>2026-08-31T20:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/abcs/"><![CDATA[<h2 id="the-abcs-of-empowering-builders-to-combine-human-and-token-capital-to-achieve-more">The ABCs of Empowering <strong>Builders</strong> to Combine Human and Token Capital to Achieve more</h2>
 
 <hr />
 
@@ -1183,91 +1220,4 @@ by <a href="https://www.linkedin.com/in/charliecrocker/">Charlie Crocker</a></p>
 
 <p>Enjoy the rest of your summer!</p>
 
-<p>Darwin</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="solutions" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in August 2020]]></summary></entry><entry><title type="html">Solutions enable Human Experiences that Affect Lives</title><link href="https://blog.commonacumen.com/architecture%20&%20design/solutions-affect-lives/" rel="alternate" type="text/html" title="Solutions enable Human Experiences that Affect Lives" /><published>2020-07-29T01:34:20+00:00</published><updated>2020-07-29T01:34:20+00:00</updated><id>https://blog.commonacumen.com/architecture%20&amp;%20design/solutions-affect-lives</id><content type="html" xml:base="https://blog.commonacumen.com/architecture%20&amp;%20design/solutions-affect-lives/"><![CDATA[<p>Check out this past post from the Microsoft Data Architecture Blog in July 2020</p>
-
-<p><img src="/assets/images/postimages/Solutions/solutions.png" alt="SolutionsAffectLives" /></p>
-
-<p>Our experience shows that cloud technology, and the architecture used to create solutions can have a substantial impact on human lives.  Positive human experiences can encourage broader adoption of products, services, or ideas, and from a change management perspective can help individuals, teams, and organizations achieve lasting change.  To positively affect lives, solution architects, sponsors, and stakeholders need to do their part by help transform the experiences of those interacting/transacting with their organization by designing adaptable, end-to-end data and analytics solutions.  Architectures that have shown good results for our clients are based on these <a href="https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/">architectural styles</a> (big data, event-driven, microservices).</p>
-
-<p>Let’s start by looking at some of the architectural components and layers of an enterprise architecture.</p>
-
-<p>Architectural Components
-The major architectural components of any system are the software and the hardware.  All software systems can be divided into four basic functions. These four functions (data storage, data access logic, application logic, and presentation logic) are the basic building blocks of any information system.  The three primary hardware components of a system are client computers, servers, and the network that connects them.
-<a href="https://learning.oreilly.com/library/view/system-analysis-and/9781118057629/">System Analysis and Design, Fifth Edition</a> by Roberta M. Roth; Barbara Haley Wixom; Alan Dennis Published by Wiley, 2012</p>
-
-<p>When the storage, compute, network, database, web app, analytics, and AI and Machine Learning components are on the Azure data and analytics platform great things are possible.  Here are some Enterprise Architecture diagrams that focus on the layers that make up a solution architecture.</p>
-
-<h2 id="enterprise-architecture-ea-layers">Enterprise Architecture (EA) Layers</h2>
-
-<p><img src="/assets/images/postimages/Solutions/BIAT.jpg" alt="biat" /></p>
-
-<p>Conventional BIAT Diagram and the 5-Layer BIAT Diagram <a href="http://eitbokwiki.org/Enterprise_Architecture">http://eitbokwiki.org/Enterprise_Architecture</a></p>
-
-<p>This post uses the term <strong>data</strong> vs <strong>information</strong> because in the world of Data &amp; AI the industry terms are more data centric: Big Data, Data Engineer, Data Science, Data Analyst, Data Warehouse, Data Mart, Data Model, Datastore, Database, Data Visualization, Data Wrangling, Data Mining, Data Lake, DataFrame, Change Data Capture, and Master Data.  This is a lot of information, but it is all data!  Combining the two references above you might end up with a diagram that looks like this:</p>
-
-<p><img src="/assets/images/postimages/Solutions/ealayers.png" alt="ealayers" /></p>
-
-<p><code class="language-plaintext highlighter-rouge">Darwin’s munging (in a data wrangling kind of way) of EA layers and Architectural Components</code></p>
-
-<h2 id="real-life-scenario">Real-life scenario</h2>
-
-<p>For a real-life scenario to test some of this out, let’s use moving stuff (furniture, boxes, lamps, rugs, chairs tables) from one place to another (warehouse, house, apartment, office).  To do this most people either hire a moving company, or if you like to be hands-on, do-it-yourself and rent a trailer or truck.  Renting moving equipment is a very complex logistics business process.  The moving equipment rental business process has many actors (users of the system) that are human users, and there is little control over the human users involved in the system (customer might not take the truck or trailer back in time, extend their rental, or return equipment to a location that has no demand for the being rented the next day); thus the need to check for human errors, contain bias, expedite last minute changes, and have the privileges setup to reduce any harm to the parties involved.  It is real life, tough to automate, and kind of out of control.  Such a process to far less controlled than fulfilling an online order from a online retailers warehouse to your house.  Throw in Covid-19, with requirements to clean equipment, wear masks, and social distance and you have potential for some chaos!  For example, no more paper rental agreement which probably changes the process.</p>
-
-<h2 id="recommended-solution-architecture-to-approach-and-organize-the-chaos">Recommended solution architecture to approach and organize the chaos</h2>
-
-<p>What are some of the things to consider when building a data and analytics solution that works for the real-life scenario described?  Using a Cloud-based Data, AI/ML, Modern Data Management, and Modern Application focused approach the design of an End-to-End (E2E) solution might use and combine these capabilities:</p>
-
-<ul>
-  <li>
-    <p><strong>OLTP</strong> (Online Transactional Processing) to create, read, update, and delete (CRUD stuff) the transactions in an operational RDBMS (Relational Database Management System) like <a href="https://azure.microsoft.com/en-us/services/sql-database/">Azure SQL Database</a></p>
-  </li>
-  <li>
-    <p><strong>NoSQL</strong> database like <a href="https://azure.microsoft.com/en-us/services/cosmos-db/">Azure Cosmos DB</a> as the cloud-native operational database to store the data that is better stored in document databases (rental contract, attributes and preferences of the customers and dealers, and profiles of the rental equipment)</p>
-  </li>
-  <li>
-    <p><a href="https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven"><strong>Event-driven</strong></a> architecture to capture all the interactions between the human to human and device actors (emails, texts, social media tweets and Instagram posts, near real-time IoT telemetry data streaming from the fleet of trucks and trailers).  Capture events using <a href="https://docs.microsoft.com/en-us/azure/event-hubs/">Azure Event Hub</a>, <a href="https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub">Azure IoT Hub</a>, <a href="https://kafka.apache.org/">Apache Kafka</a> and perform complex event processing using <a href="https://azure.microsoft.com/en-us/services/stream-analytics/">Azure Stream Analytics</a>.  Much of this human created data comes from the endless mobile devices that the customers (drivers) use during the lifecycle from reservation - to pick up location - to return location.  This also can include SOA/ESB driven application integration via APIs and messaging.  This information could be landed in storage, in relational or NoSQL databases, or use <a href="https://azure.microsoft.com/en-us/services/data-explorer/">Azure Data Explorer</a> - a fast, fully managed data analytics service for real-time analysis on large volumes of data streaming from applications, websites, IoT devices, and more.</p>
-  </li>
-  <li>
-    <p><a href="https://azure.microsoft.com/en-us/services/storage/data-lake-storage/"><strong>Data Lake storage</strong></a> and Big Data analytical processing like <a href="https://docs.microsoft.com/en-us/azure/databricks/scenarios/what-is-azure-databricks">Azure Databricks</a> (Spark) and data integration tools like <a href="https://docs.microsoft.com/en-us/azure/data-factory/">Azure Data Factory</a> for combining data from the OLTP and operational systems as well as near real-time data streaming from fleet IoT device telemetry in trucks and trailers, from emails, from texts, from chats with chatbots, or from tweets.  Change Data Capture, transactional replication and other data movement technologies need consideration here as well.</p>
-  </li>
-  <li>
-    <p><strong>Analytical data stores</strong> to create modern data warehouses like <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/">Azure Synapse Analytics</a>.  In fact Azure Synapse Analytics combines all of the capabilities in the first 4 items above and can be used to create HTAP (hybrid transactional and analytical processing) systems using offerings like <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link-use-cases">Azure Synapse Link for Azure Cosmos DB</a>.</p>
-  </li>
-  <li>
-    <p><strong>Business Intelligence</strong> analysis and data visualizations using <a href="https://powerbi.microsoft.com/en-us/">Power BI</a>.  It is amazing what can be done with Cloud-based BI.  The connectivity, capabilities, scalability, security, performance, and affordability make getting started easy.</p>
-  </li>
-  <li>
-    <p><strong>AI and Machine Learning</strong> like Azure <a href="https://azure.microsoft.com/en-us/services/cognitive-services/">Cognitive Services</a> to process images like the pictures on drivers’ licenses, automating forms, predicting customer sentiment in texts, as well as tools like <a href="https://azure.microsoft.com/en-us/services/machine-learning/#product-overview">Azure Machine Learning</a> for data scientists to build and deploy models to suggest next best offers to customers that have similar profiles, or to predict the need for additional insurance coverage or fraudulent activities.  Maybe even predict who is having a bad experience and needs a call of support.</p>
-  </li>
-  <li>
-    <p><strong><a href="https://azure.microsoft.com/en-us/overview/cloudnative/">Cloud Native Applications</a></strong> using microservices, serverless, and containers like Docker and container orchestration services like Kubernetes —optimized for cloud scale and performance.  Apps built using programming languages like JavaScript and TypeScript, frameworks like React and Angular, and runtime environments like Node.js.  With AI and machine learning built in.</p>
-  </li>
-</ul>
-
-<p><code class="language-plaintext highlighter-rouge">Note: You will have some of the capabilities and technologies already in place, so this is an integration-based solution that often extends what you already have.  You will want to migrate some of the applications and data sources to Azure, but the data and analytics components (stuff in land, stage, warehouse, information delivery, BI, AI and ML, and applications) are definitely best up on Azure.</code></p>
-
-<p><img src="/assets/images/postimages/Solutions/e2edataaisolution.png" alt="e2e" /></p>
-
-<p><code class="language-plaintext highlighter-rouge">Darwin’s end-to-end cloud solution architecture diagram</code></p>
-
-<p><code class="language-plaintext highlighter-rouge">The diagram above currently excludes Master Data Management (MDM), Data Governance, Data Catalogs, and probably missed something. This post is already broad and complex.  This complexity brings all these currently excluded capabilities to a greater level of importance but let’s leave that for another day.</code></p>
-
-<p>Some of the inspiration for this post comes from the Data Vault methodology.  Solutions I have created during the last 25 years used Land, Stage, and Publish tables and schema along with association tables to associate source system keys with surrogate keys.  Information delivery was through star schema accessed by BI tools like Power BI.  I considered my approach as Kimball-based but in many ways it was actually pretty aligned with the Data Vault methodology, which IMO is a nice blend of the Ralph Kimball and the Bill Inmon approaches to data warehousing.  Below is a diagram of the Data Vault architecture.</p>
-
-<p><img src="/assets/images/postimages/Solutions/datavault.jpg" alt="datavault" /></p>
-
-<p><a href="https://www.amazon.com/Building-Scalable-Data-Warehouse-Vault-ebook-dp-B015KKYFGO/dp/B015KKYFGO/ref=mt_other?_encoding=UTF8&amp;me=&amp;qid=">Building a Scalable Data Warehouse with Data Vault 2.0</a> by Dan Linstedt and Michael Olschimke</p>
-
-<p>I also found this illustration helpful from the eBook <a href="https://www.qlik.com/us/resource-library/data-warehouse-automation-in-azure-for-dummies">Data Warehouse Automation in Azure for Dummies</a> by Matthew Basile, Clive Bearman, Rajeev Jain, and Kevin Pardue</p>
-
-<p><img src="/assets/images/postimages/Solutions/agiledatapipeline.png" alt="agiledata" /></p>
-
-<p>So, to wrap up and test my real-life scenario, would this architecture improve the experience of someone renting moving equipment? In my opinion as both a solution architect and a consumer, a definitive yes! There are systems, people, and processes in place, but there are things to consider extending to improve the human experience. For example, if the people and processes change the pickup and drop off locations with the customer at too great a frequency; something has to report, predict the negative experience, and then the system, people, and processes have to adopt to prevent the occurrence of such negative experiences. It is the interactions that happen around the transactions that often determine the experience.</p>
-
-<p>There is no immutable master plan for this type of architecture, and you need to get started to realize any of it. You have probably already started, but is something missing that this post helped surface? Start small with a business problem and combine some operational structured data sources and some streaming data sources needed to solve the problem; create some reports in Power BI, and build and deploy ML models to embed into a Power Apps or custom Apps so users can use them. Use Agile and DevOps and iterate on the solution, and then use what you learned and do more projects. Hopefully this post has provided some insights, but it is a journey that requires a growth mindset for the entire organization at the individual, team, and corporate level. Whether you categorize yourself as a consumer, architect, developer, designer, engineer, employee, student, teacher, line of business manager, administrator, or executive; hopefully you are inspired to take that next step in your journey. If you have an idea you would like to discuss, please call, email, or comment. Would love to help turn your vision into reality and help you embrace and harness the chaos in your organization.</p>
-
-<p>Hope you enjoy your summer whether relaxing or productive (does not need to be house painting, could be camping or time at the lake house)!</p>
-
-<p>Stay Safe,</p>
-
-<p>Darwin</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="solutions" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in July 2020]]></summary></entry></feed>
+<p>Darwin</p>]]></content><author><name>CommonAcumen</name></author><category term="architecture &amp; design" /><category term="solutions" /><summary type="html"><![CDATA[Check out this past post from the Microsoft Data Architecture Blog in August 2020]]></summary></entry></feed>
