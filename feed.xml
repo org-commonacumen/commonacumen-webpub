@@ -1,10 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-10-11T21:25:38+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand/" rel="alternate" type="text/html" title="Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo" /><published>2026-10-11T20:44:30+00:00</published><updated>2026-10-11T20:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand/"><![CDATA[<h2 id="processing-rtx-spark-gb10-demand-with-excel-and-copilot-cowork-with-a-github-repo-and-demo">Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://blog.commonacumen.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.commonacumen.com/" rel="alternate" type="text/html" /><updated>2026-10-11T21:34:58+00:00</updated><id>https://blog.commonacumen.com/feed.xml</id><title type="html">Common Acumen</title><subtitle>This is a blog site for you to follow my ideas and thoughts at blog.commonacumen.com</subtitle><author><name>CommonAcumen</name></author><entry><title type="html">Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo</title><link href="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand/" rel="alternate" type="text/html" title="Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo" /><published>2026-10-11T20:44:30+00:00</published><updated>2026-10-11T20:44:30+00:00</updated><id>https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand</id><content type="html" xml:base="https://blog.commonacumen.com/ai%20and%20agents/ai%20coding%20agents/copilot/rtxsparkdemand/"><![CDATA[<h2 id="processing-rtx-spark-gb10-demand-with-excel-and-copilot-cowork-with-a-github-repo-and-demo">Processing RTX Spark GB10 Demand with Excel and Copilot Cowork with a GitHub Repo and Demo</h2>
 
 <hr />
 
 <p>Not sure if you saw this week’s Surface Ultra launch on October 7, 2026. I put together a <a href="https://github.com/DataSnowman/DemandPlanning">GitHub repo</a> demonstrating demand planning and processing spreadsheets with synthetic data using Cowork. I used to do this for IBM in the 1990s for IBM servers, desktops, and laptops for the Large Accounts, Demand Planning, and Cost Engineering teams at IBM PC Company. Except it was with PROFS email, Lotus 1-2-3 spreadsheets, DB2, and a decision support product called <strong>Metaphor</strong>. Kind of retro, modern, and frontier all at the same time.</p>
 
 <p>You can find the demo here: <a href="https://www.youtube.com/watch?v=rZMH9sxk3ek">Cowork Demo of Processing RTX Spark GB10 Demand with Excel and Copilot Cowork</a></p>
+
+<div class="embed-container">
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/rZMH9sxk3ek" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 
 <table>
   <tbody>
@@ -14,6 +36,28 @@
     </tr>
   </tbody>
 </table>
+
+<div class="embed-container">
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/ilmBGeGldrI" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 
 <p>Here is an image of the summary spreadsheet created using a prompt in Copilot Cowork:</p>
 
